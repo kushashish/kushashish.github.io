@@ -2,8 +2,8 @@ $(document).ready(function() {
     $('.slider-box .container-small').slick({
         arrows: false,
         dots: true,
-        // autoplay: true,
-        // autoplaySpeed: 4000,
+        autoplay: true,
+        autoplaySpeed: 4000,
     });
 
     $('.ques-card').click(function() {
