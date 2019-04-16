@@ -1239,6 +1239,7 @@ html, body {
   font-weight: 600;
   color: #003057;
   line-height: 1.35;
+  margin-bottom: 0.125em;
 }
 .prices-box .price-card__desc {
   font-size: 1em;
@@ -1290,7 +1291,7 @@ html, body {
   .message-box {
     background-image: url(../img/msg-box.svg);
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: right -40px center;
     background-size: auto 430px;
   }
 }
@@ -1458,6 +1459,7 @@ html, body {
   font-size: 1em;
   font-weight: 600;
   color: #003057;
+  padding-bottom: 0.313em;
 }
 .pack-banner-box .feature-card__desc {
   font-size: 0.875em;
@@ -1874,6 +1876,9 @@ html, body {
   display: block;
 }
 
+.tab-content {
+  max-width: 36.875em;
+}
 .tab-content .table {
   width: 100%;
   max-width: 35.625em;
@@ -1937,7 +1942,6 @@ html, body {
   color: #505759;
 }
 .tab-content .box-rectangle {
-  max-width: 16.875em;
   border-radius: 5px;
   border: solid 1px #d4eae4;
   background-color: #ffffff;
@@ -1945,6 +1949,12 @@ html, body {
   line-height: 1.56;
   color: #505759;
   padding: 0.9375em;
+}
+.tab-content .box-rectangle:first-child {
+  margin-right: 15px;
+}
+.tab-content .box-rectangle:last-child {
+  margin-left: 15px;
 }
 .tab-content .row + .row {
   margin-top: 3.125em;
@@ -1981,7 +1991,7 @@ html, body {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
   border: solid 1px rgba(80, 87, 89, 0.05);
   background-color: #ffffff;
-  padding: 1.75em 0 2em;
+  padding: 1.75em 0 1.75em;
 }
 .questions-box .ques-card + .ques-card {
   margin-top: 1.25em;
@@ -1993,9 +2003,6 @@ html, body {
   font-size: 1em;
   line-height: 1.56;
   color: #505759;
-}
-.questions-box .ques-card .ques {
-  margin-bottom: 0.625em;
 }
 .questions-box .ques-card .ques:before {
   content: url(../img/select_arrow.png);
@@ -2011,6 +2018,7 @@ html, body {
 }
 .questions-box .ques-card .ans {
   display: none;
+  margin-top: 0.625em;
 }
 
 /* jee main page css end */
@@ -2071,9 +2079,6 @@ html, body {
 }
 .footer .nav-links li + li {
   margin-top: 0.938em;
-}
-.footer .pb32 {
-  padding-bottom: 32px;
 }
 .footer address {
   font-size: 0.875em;
