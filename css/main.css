@@ -1199,7 +1199,7 @@ html, body {
   display: block;
   position: absolute;
   width: 100%;
-  height: calc(55% + 0.35em);
+  height: calc(53% + 0.35em);
   left: 0;
   bottom: -3em;
   z-index: 1;
@@ -1210,8 +1210,8 @@ html, body {
   text-decoration: none;
   position: relative;
   z-index: 2;
-  width: 23.125em;
-  padding: 1.875em 3.688em 0;
+  width: 18em;
+  padding: 1.875em 1.5em 0;
   border-radius: 10px;
   vertical-align: top;
   transition: all 0.25s ease;
