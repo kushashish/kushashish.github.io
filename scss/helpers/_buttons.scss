@@ -1,0 +1,36 @@
+.btn {
+    text-decoration: none;
+    padding: 11px 15px;
+    border-radius: 2px;
+    border: none;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 13px;
+    @extend .pointer;
+}
+
+.btn-red {
+    background-color: #ed1c24;
+    color: #FFF;
+    &:hover {
+        background-color: #d80911;
+    }
+}
+
+.btn-menu {
+    width: 28px;
+    height: 48px;
+    background: #e1e1e1;
+    padding: 0;
+    svg {
+        width: 22px !important;
+    }
+}
+
+.btn-icons {
+    @extend .pointer;
+    background: transparent;
+    border: none;
+    padding: 5px;
+    border-radius: 50%;
+}
