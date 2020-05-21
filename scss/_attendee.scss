@@ -1,0 +1,48 @@
+.attendee-box {
+    .toolbar {
+        @extend .d-none;
+        @include media-up(md) {
+            display: flex;
+        }
+    }
+    .toolbar-row {
+        width: 100%;
+    }
+    .btn-video-filled,
+    .btn-audio-filled {
+        border: 1px solid #bfbfbf;
+        background-color: #FFF;
+        margin: 0 8px;
+        width: 44px;
+        height: 44px;
+        background-size: 65%;
+        @include media-up(md) {
+            margin: 8px;
+            width: 32px;
+            height: 32px;
+        }
+        &.disabled {
+            border-color: #ed1c24 !important;
+        }
+    }
+    .teach-video-box,
+    .other-video-box {
+        left: auto;
+        right: 0;
+    }
+    .teach-video-box {
+        bottom: 0;
+    }
+    .video-scroller {
+        @include media-down(md) {
+            height: calc(100% - 64px);
+        }
+        .name {
+            flex: 1;
+        }
+    }
+    .video-controll {
+        padding: 10px;
+        text-align: center;
+    }
+}

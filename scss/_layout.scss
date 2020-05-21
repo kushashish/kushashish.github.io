@@ -32,15 +32,18 @@
         }
     }
     .header {
-        @extend .absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        padding: 13px 15px;
-        height: 84px;
-        @extend .d-flex;
-        @extend .align-items-start;
-        @extend .justify-content-between;
+        @extend .d-none;
+        @include media-up(md) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 190px;
+            padding: 13px 15px;
+            height: 84px;
+            z-index: 999;
+            display: flex;
+            justify-content: space-between;
+        }
     }
     .screen-box {
         @extend .d-flex;
@@ -67,6 +70,10 @@
         .aside {
             margin-right: -190px;
             overflow: hidden !important;
+        }
+        .show-sidebar {
+            opacity: 1;
+            visibility: visible;
         }
     }
 }

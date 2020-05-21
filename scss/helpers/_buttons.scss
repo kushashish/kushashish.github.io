@@ -29,8 +29,126 @@
 
 .btn-icons {
     @extend .pointer;
-    background: transparent;
+    background-color: transparent;
     border: none;
     padding: 5px;
     border-radius: 50%;
+    & * {
+        pointer-events: none;
+    }
+}
+
+.btn-chat:not(.no-bg) {
+    background-image: url(/img/svg/chat.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 5px;
+    &.disabled {
+        background-image: url(/img/svg/chat-cross.svg);
+    }
+}
+
+.btn-chat-white:not(.no-bg) {
+    background-image: url(/img/svg/chat-white.svg);
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 5px;
+    &.disabled {
+        background-color: #ed1c24 !important;
+        background-image: url(/img/svg/chat-cross-white.svg);
+    }
+}
+
+.btn-video:not(.no-bg) {
+    background-image: url(/img/svg/video.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    &.disabled {
+        background-image: url(/img/svg/video-cross.svg);
+    }
+}
+
+.btn-video-fill:not(.no-bg) {
+    background-color: #FFF;
+    background-image: url(/img/svg/video-fill.svg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    &.disabled {
+        background-color: #ed1c24 !important;
+        background-image: url(/img/svg/video-fill-cross.svg);
+    }
+}
+
+.btn-video-filled:not(.no-bg) {
+    background-color: #FFF;
+    background-image: url(/img/svg/video.svg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    &.disabled {
+        background-color: #ed1c24 !important;
+        background-image: url(/img/svg/video-cross-white.svg);
+    }
+}
+
+.btn-video-white:not(.no-bg) {
+    background-image: url(/img/svg/video-white.svg);
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center;
+    &.disabled {
+        background-color: #ed1c24 !important;
+        background-image: url(/img/svg/video-cross-white.svg);
+    }
+}
+
+.btn-audio:not(.no-bg) {
+    background-image: url(/img/svg/audio.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 5px;
+    &.disabled {
+        background-image: url(/img/svg/audio-cross.svg);
+    }
+}
+
+.btn-audio-fill:not(.no-bg) {
+    background-color: #FFF;
+    background-image: url(/img/svg/audio-fill.svg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    &.disabled {
+        background-color: #ed1c24 !important;
+        background-image: url(/img/svg/audio-fill-cross-white.svg);
+    }
+}
+
+.btn-audio-filled:not(.no-bg) {
+    background-color: #FFF;
+    background-image: url(/img/svg/audio.svg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    &.disabled {
+        background-color: #ed1c24 !important;
+        background-image: url(/img/svg/audio-cross-white.svg);
+    }
+}
+
+.btn-audio-white:not(.no-bg) {
+    background-image: url(/img/svg/audio-white.svg);
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 5px;
+    &.disabled {
+        background-color: #ed1c24 !important;
+        background-image: url(/img/svg/audio-cross-white.svg);
+    }
 }

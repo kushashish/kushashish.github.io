@@ -1,22 +1,43 @@
 .screens {
-    @extend .d-none;
-    @extend .fixed;
-    @include media-up(md) {
-        display: block;
-    }
-    top: 95px;
-    .screen-palette {
-        overflow: hidden;
-        @extend .absolute;
-        top: 0;
-        z-index: 99;
-        transform: translateX(-110%);
-        width: 130px;
-        background: #FFF;
-        border-radius: 0 10px 10px 0;
-        transition: transform 0.25s ease-in-out;
+    @extend .absolute;
+    z-index: 99;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: #FFF;
+    @include media-down(md) {
+        transition: transform 0.25s ease-in;
+        transform: translateY(100%);
         &.active {
-            transform: translateX(0);
+            transform: translateY(0);
+        }
+    }
+    @include media-up(md) {
+        position: fixed;
+        width: auto;
+        top: 95px;
+        bottom: auto;
+        background-color: transparent;
+    }
+    .screen-palette {
+        height: 100%;
+        @include media-up(md) {
+            position: absolute;
+            top: 0;
+            z-index: 99;
+            transform: translateX(-110%);
+            width: 130px;
+            height: auto;
+            background: #FFF;
+            border-radius: 0 10px 10px 0;
+            transition: transform 0.25s ease-in-out;
+            &.active {
+                transform: translateX(0);
+            }
+            &:hover .hide-screen-box {
+                opacity: 1;
+                visibility: visible;
+            }
         }
     }
     .title {
@@ -41,9 +62,19 @@
         }
     }
     .screen-list {
+        @include media-down(md) {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            li:last-child {
+                margin-top: auto;
+                padding: 20px;
+                text-align: center;
+            }
+        }
         a {
             font-weight: 300;
-            font-size: 12px;
+            font-size: 16px;
             color: #000;
             @extend .d-flex;
             @extend .justify-content-between;
@@ -52,10 +83,16 @@
             &:hover {
                 background: #eee;
             }
+            @include media-up(md) {
+                font-size: 12px;
+            }
         }
         svg {
-            width: 9px;
+            width: 14px;
             height: auto;
+            @include media-up(md) {
+                width: 10px;
+            }
         }
     }
     .screen-count {
@@ -74,6 +111,83 @@
         sup {
             @extend .absolute;
             top: auto;
+        }
+    }
+    .hide-screen-box {
+        @extend .absolute;
+        @extend .pointer;
+        right: 0;
+        top: 10px;
+        z-index: 99;
+        background: #FFF;
+        margin-right: -21px;
+        padding: 2px 4px 1px 3px;
+        border-radius: 0 5px 5px 0;
+        opacity: 0;
+        visibility: hidden;
+        svg {
+            width: 14px;
+            fill: #656565;
+        }
+    }
+    .btn-plus {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.30);
+        padding: 15px 12px;
+        width: 50px;
+        height: 50px;
+        svg {
+            width: 18px;
+            fill: #b7b7b7;
+        }
+    }
+}
+
+#screenAdded {
+    @extend .d-none;
+    @include media-up(md) {
+        display: block;
+    }
+}
+
+.show-sidebar {
+    @extend .absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-60%);
+    background: white;
+    z-index: 8;
+    padding: 10px 7px 0;
+    border-radius: 5px 0 0 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s ease;
+    transition-delay: 0.35s;
+    .btn-icons {
+        @extend .d-block;
+        @extend .relative;
+    }
+    svg {
+        width: 24px;
+    }
+    sup {
+        @extend .absolute;
+        top: 5px;
+        right: 3px;
+    }
+}
+
+.btn-tools {
+    @include media-down(md) {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        right: 0;
+        top: 10px;
+        padding: 0;
+        svg {
+            width: 30px;
+            height: 30px;
+            fill: #FFF;
         }
     }
 }
