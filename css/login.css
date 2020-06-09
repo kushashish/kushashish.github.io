@@ -672,10 +672,13 @@ ul {
     justify-content: center;
   }
 .right-col .img-fluid {
+  display: none;
+}
+}
+.right-col .img-fluid {
   display: block;
   margin: 0 0 40px;
   max-width: 100px;
-}
 }
 
 .left-col {
