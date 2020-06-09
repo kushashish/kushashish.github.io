@@ -671,6 +671,9 @@ ul {
     align-items: center;
     justify-content: center;
   }
+.right-col .img-fluid {
+  display: none;
+}
 }
 .right-col .img-fluid {
   display: block;
