@@ -1,0 +1,1603 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.25;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+  height: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+  max-width: 100%;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  outline: none;
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/**
+ * Add box sizing border box in all brosers.
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**
+ * initializing svg size.
+ */
+svg {
+  width: auto;
+  height: auto;
+}
+
+.img-fluid {
+  max-width: 100%;
+  display: block;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.m0 {
+  margin: 0 !important;
+}
+
+.p0 {
+  padding: 0 !important;
+}
+
+.px-3 {
+  padding-left: 3px !important;
+  padding-right: 3px !important;
+}
+
+.pointer, .toggle-sidebar, .setting-box .lc-cross, .icons-box .btn-icons, .tab-nav button, .color-palette li, .tools-palette li, .screens .hide-screen-box, .btn-icons, .btn {
+  cursor: pointer;
+}
+
+.d-none, .attendee-box .toolbar, .tabs .tab, .temp-video-box, .settings, #screenAdded, .wrapper .header {
+  display: none;
+}
+
+.d-none-true {
+  display: none !important;
+}
+
+.d-block, .edit-box .btn-icons, .msg-type .input-msg, .tabs .tab.active, .submenu.active, .tools-palette a, .show-sidebar .btn-icons {
+  display: block;
+}
+
+.ml-auto, .setting-box .lc-cross, .btn-screen-mob {
+  margin-left: auto !important;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media screen and (min-width: 992px) {
+  .d-md-block {
+    display: block;
+  }
+
+  .d-md-inline-block {
+    display: inline-block;
+  }
+
+  .d-md-none {
+    display: none;
+  }
+}
+.d-flex, .setting-individual .setting-ind, .setting-all .setting-chat, .setting-box .title-box, .video-scroller li, .icons-box, .msg-box .chat-msg-title, .msg-box, .tab-nav button, .tab-nav, .submenu a, .tools-palette li, .toolbar .palette, .toolbar .toolbar-row, .screens .screen-list a, .wrapper .screen-box, .wrapper,
+.row {
+  display: flex;
+}
+
+.align-items-center, .setting-all .setting-chat, .setting-box .title-box, .video-scroller .initials, .video-scroller li, .tab-nav button, .submenu a {
+  align-items: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.justify-content-center, .video-scroller .initials {
+  justify-content: center;
+}
+
+.justify-content-between, .setting-all .setting-chat, .icons-box, .msg-box .chat-msg-title, .screens .screen-list a {
+  justify-content: space-between;
+}
+
+.justify-content-arround {
+  justify-content: space-around;
+}
+
+.flex-direction-column, .wrapper .screen-box, .wrapper {
+  flex-direction: column;
+}
+
+.flex-direction-row {
+  flex-direction: row;
+}
+
+.align-self-start {
+  align-self: flex-start;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.relative, .setting-box, .msg-type, .tab-nav button, .settings, .tools-palette li, .show-sidebar .btn-icons, .screens .screen-count, .screens .title, .wrapper .aside, .wrapper .main, .wrapper {
+  position: relative;
+}
+
+.absolute, .control-box, .toggle-sidebar, .tab-nav sup, .teach-video-box, .menu:before, .submenu, .show-sidebar sup, .show-sidebar, .screens .hide-screen-box, .screens .screen-count sup, .screens .title:before, .screens {
+  position: absolute;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 11px 15px;
+  border-radius: 2px;
+  border: none;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 13px;
+}
+
+.btn-red {
+  background-color: #ed1c24;
+  color: #FFF;
+}
+.btn-red:hover {
+  background-color: #d80911;
+}
+
+.btn-menu {
+  width: 28px;
+  height: 48px;
+  background: #e1e1e1;
+  padding: 0;
+}
+.btn-menu svg {
+  width: 22px !important;
+}
+
+.btn-icons {
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  border-radius: 50%;
+}
+.btn-icons * {
+  pointer-events: none;
+}
+
+.btn-chat:not(.no-bg) {
+  background-image: url(../img/svg/chat.svg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 5px;
+}
+.btn-chat:not(.no-bg).disabled {
+  background-image: url(../img/svg/chat-cross.svg);
+}
+
+.btn-chat-white:not(.no-bg) {
+  background-image: url(../img/svg/chat-white.svg);
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 5px;
+}
+.btn-chat-white:not(.no-bg).disabled {
+  background-color: #ed1c24 !important;
+  background-image: url(../img/svg/chat-cross-white.svg);
+}
+
+.btn-video:not(.no-bg) {
+  background-image: url(../img/svg/video.svg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.btn-video:not(.no-bg).disabled {
+  background-image: url(../img/svg/video-cross.svg);
+}
+
+.btn-video-fill:not(.no-bg) {
+  background-color: #FFF;
+  background-image: url(../img/svg/video-fill.svg);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.btn-video-fill:not(.no-bg).disabled {
+  background-color: #ed1c24 !important;
+  background-image: url(../img/svg/video-fill-cross.svg);
+}
+
+.btn-video-filled:not(.no-bg) {
+  background-color: #FFF;
+  background-image: url(../img/svg/video.svg);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.btn-video-filled:not(.no-bg).disabled {
+  background-color: #ed1c24 !important;
+  background-image: url(../img/svg/video-cross-white.svg);
+}
+
+.btn-video-white:not(.no-bg) {
+  background-image: url(../img/svg/video-white.svg);
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.btn-video-white:not(.no-bg).disabled {
+  background-color: #ed1c24 !important;
+  background-image: url(../img/svg/video-cross-white.svg);
+}
+
+.btn-audio:not(.no-bg) {
+  background-image: url(../img/svg/audio.svg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 5px;
+}
+.btn-audio:not(.no-bg).disabled {
+  background-image: url(../img/svg/audio-cross.svg);
+}
+
+.btn-audio-fill:not(.no-bg) {
+  background-color: #FFF;
+  background-image: url(../img/svg/audio-fill.svg);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.btn-audio-fill:not(.no-bg).disabled {
+  background-color: #ed1c24 !important;
+  background-image: url(../img/svg/audio-fill-cross-white.svg);
+}
+
+.btn-audio-filled:not(.no-bg) {
+  background-color: #FFF;
+  background-image: url(../img/svg/audio.svg);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.btn-audio-filled:not(.no-bg).disabled {
+  background-color: #ed1c24 !important;
+  background-image: url(../img/svg/audio-cross-white.svg);
+}
+
+.btn-audio-white:not(.no-bg) {
+  background-image: url(../img/svg/audio-white.svg);
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 5px;
+}
+.btn-audio-white:not(.no-bg).disabled {
+  background-color: #ed1c24 !important;
+  background-image: url(../img/svg/audio-cross-white.svg);
+}
+
+.wrapper {
+  height: 100vh;
+  overflow: hidden;
+}
+@media screen and (min-width: 992px) {
+  .wrapper {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 992px) {
+  .wrapper .main {
+    position: static;
+    flex-grow: 1;
+  }
+}
+.wrapper .main-wrapper {
+  flex-grow: 1;
+  background-color: #eee;
+  position: relative;
+}
+@media screen and (min-width: 992px) {
+  .wrapper .main-wrapper {
+    background-color: #111;
+  }
+}
+.wrapper .aside {
+  flex-grow: 1;
+}
+@media screen and (min-width: 992px) {
+  .wrapper .aside {
+    transition: margin 0.35s ease-in-out;
+    width: 190px;
+    flex-grow: initial;
+  }
+}
+@media screen and (min-width: 992px) {
+  .wrapper .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 190px;
+    padding: 13px 15px;
+    height: 84px;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 992px) {
+  .wrapper .screen-box {
+    height: 100vh;
+  }
+  .wrapper .screen-box .main-screen {
+    flex-grow: 1;
+    height: calc(100vh - 48px);
+  }
+}
+.wrapper .toolbar {
+  height: 36px;
+  background-color: #FFF;
+}
+@media screen and (min-width: 992px) {
+  .wrapper .toolbar {
+    height: 48px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .fullScreenMode .aside {
+    margin-right: -190px;
+    overflow: hidden !important;
+  }
+  .fullScreenMode .show-sidebar {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.header .logo {
+  max-width: 138px;
+}
+.header time {
+  font-size: 12px;
+  color: #FFF;
+}
+
+.screens {
+  z-index: 99;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: #FFF;
+}
+@media screen and (max-width: 991px) {
+  .screens {
+    transition: transform 0.25s ease-in;
+    transform: translateY(100%);
+  }
+  .screens.active {
+    transform: translateY(0);
+  }
+}
+@media screen and (min-width: 992px) {
+  .screens {
+    position: fixed;
+    width: auto;
+    top: 95px;
+    bottom: auto;
+    background-color: transparent;
+  }
+}
+.screens .screen-palette {
+  height: 100%;
+}
+@media screen and (min-width: 992px) {
+  .screens .screen-palette {
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    transform: translateX(-110%);
+    width: 130px;
+    height: auto;
+    background: #FFF;
+    border-radius: 0 10px 10px 0;
+    transition: transform 0.25s ease-in-out;
+  }
+  .screens .screen-palette.active {
+    transform: translateX(0);
+  }
+  .screens .screen-palette:hover .hide-screen-box {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.screens .title {
+  padding: 14px 8px 5px;
+  font-size: 13px;
+  color: #000;
+  font-weight: 500;
+}
+.screens .title:before {
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: calc(100% - 9px);
+  background-color: #d9dadd;
+}
+.screens .title svg {
+  width: 24px;
+  height: auto;
+  margin-right: 3px;
+}
+@media screen and (max-width: 991px) {
+  .screens .screen-list {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  }
+  .screens .screen-list li:last-child {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+  }
+}
+.screens .screen-list a {
+  font-weight: 300;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 22px;
+}
+.screens .screen-list a:hover {
+  background: #eee;
+}
+@media screen and (min-width: 992px) {
+  .screens .screen-list a {
+    font-size: 12px;
+  }
+}
+.screens .screen-list svg {
+  width: 14px;
+  height: auto;
+}
+@media screen and (min-width: 992px) {
+  .screens .screen-list svg {
+    width: 10px;
+  }
+}
+.screens .screen-count {
+  width: 60px;
+  padding: 12px 15px 4px 10px;
+  border-radius: 0 8px 8px 0;
+  background-color: #FFF;
+}
+.screens .screen-count * {
+  pointer-events: none;
+}
+.screens .screen-count svg {
+  width: 30px;
+  height: auto;
+}
+.screens .screen-count sup {
+  top: auto;
+}
+.screens .hide-screen-box {
+  right: 0;
+  top: 10px;
+  z-index: 99;
+  background: #FFF;
+  margin-right: -21px;
+  padding: 2px 4px 1px 3px;
+  border-radius: 0 5px 5px 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.screens .hide-screen-box svg {
+  width: 14px;
+  fill: #656565;
+}
+.screens .btn-plus {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 15px 12px;
+  width: 50px;
+  height: 50px;
+}
+.screens .btn-plus svg {
+  width: 18px;
+  fill: #b7b7b7;
+}
+
+@media screen and (min-width: 992px) {
+  #screenAdded {
+    display: block;
+  }
+}
+
+.show-sidebar {
+  right: 0;
+  top: 50%;
+  transform: translateY(-60%);
+  background: white;
+  z-index: 8;
+  padding: 10px 7px 0;
+  border-radius: 5px 0 0 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s ease;
+  transition-delay: 0.35s;
+}
+.show-sidebar svg {
+  width: 24px;
+}
+.show-sidebar sup {
+  top: 5px;
+  right: 3px;
+}
+
+@media screen and (max-width: 991px) {
+  .btn-tools {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 0;
+    top: 10px;
+    padding: 0;
+  }
+  .btn-tools svg {
+    width: 30px;
+    height: 30px;
+    fill: #FFF;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .tools-palette {
+    display: flex !important;
+  }
+}
+.tools-palette li {
+  width: 56px;
+  padding: 11px;
+  border: 1px solid transparent;
+}
+@media screen and (max-width: 991px) {
+  .tools-palette li * {
+    pointer-events: none;
+  }
+}
+.tools-palette svg {
+  width: 100%;
+  height: auto;
+}
+.tools-palette > li:hover {
+  background: #eeeeee;
+}
+.tools-palette > li:hover > a {
+  background: #eeeeee;
+}
+.tools-palette > li:hover .submenu {
+  display: block;
+}
+.tools-palette a {
+  padding: 0 6px;
+}
+
+.submenu {
+  display: none;
+  top: 0;
+  left: 0;
+  min-width: 140px;
+  padding-bottom: 4px;
+  transform: translateY(-100%);
+}
+.submenu li {
+  width: auto;
+  padding: 0;
+  border: none;
+  background: #FFF;
+  overflow: hidden;
+}
+.submenu li:first-child {
+  border-radius: 4px 4px 0 0;
+}
+.submenu li:last-child {
+  border-radius: 0 0 4px 4px;
+}
+.submenu a {
+  font-weight: 300;
+  color: #000000;
+  font-size: 12px;
+  width: 100%;
+  padding: 6px 10px;
+  text-decoration: none;
+}
+.submenu a:hover {
+  background-color: #eeeeee;
+}
+.submenu svg {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.menu:before {
+  content: "";
+  bottom: 2px;
+  right: 2px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid #000000;
+  border-top: 5px solid transparent;
+}
+@media screen and (min-width: 992px) {
+  .menu:before {
+    bottom: auto;
+    top: 2px;
+    right: 2px;
+    border-top: none;
+    border-bottom: 5px solid transparent;
+  }
+}
+
+.color-palette {
+  align-items: flex-start;
+  padding: 0 8px;
+}
+@media screen and (min-width: 992px) {
+  .color-palette {
+    align-items: center;
+    margin-left: auto;
+  }
+}
+.color-palette li {
+  width: auto;
+  padding: 0;
+  margin: 7px 8px;
+}
+@media screen and (min-width: 992px) {
+  .color-palette li {
+    margin: 0 8px;
+  }
+}
+.color-palette a {
+  pointer-events: none;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 992px) {
+  .color-palette a {
+    width: 15px;
+    height: 15px;
+  }
+}
+.color-palette .white {
+  background-color: #FFF;
+}
+.color-palette .black {
+  background-color: #000;
+}
+.color-palette .red {
+  background-color: #ff0000;
+}
+.color-palette .yellow {
+  background-color: #ffff00;
+}
+.color-palette .blue {
+  background-color: #0000ff;
+}
+.color-palette .green {
+  background-color: #00a651;
+}
+.color-palette .active a {
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 992px) {
+  .settings {
+    display: block;
+  }
+}
+.settings .submenu {
+  z-index: 10;
+  min-width: 152px;
+  right: 4px;
+  left: auto;
+}
+.settings .submenu svg {
+  width: 18px;
+}
+
+.btn-screen-mob {
+  margin-right: 10px;
+  padding: 4px 0;
+}
+.btn-screen-mob svg {
+  width: 38px;
+  fill: #b7b7b7;
+}
+
+@media screen and (max-width: 991px) {
+  .tools-palette-mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    background: #FFF;
+    z-index: 99;
+    border-radius: 6px 6px 0 0;
+    transform: translateY(100%);
+    transition: transform 0.25s ease-in-out;
+  }
+  .tools-palette-mobile.active {
+    transform: translateY(0);
+  }
+  .tools-palette-mobile .tools-palette {
+    display: flex;
+    border-bottom: 1px solid #EEE;
+  }
+  .tools-palette-mobile .submenu-box {
+    flex-grow: 1;
+    border-bottom: 1px solid #EEE;
+  }
+  .tools-palette-mobile .submenu {
+    position: relative;
+    transform: translateY(0);
+    padding: 10px 0;
+  }
+  .tools-palette-mobile .submenu a {
+    padding: 5px 20px;
+    font-size: 16px;
+  }
+}
+
+.teach-video-box,
+.temp-video-box {
+  width: 26%;
+  height: auto;
+  overflow: hidden;
+  border: 2px solid #FFF;
+  max-width: 190px;
+}
+@media screen and (min-width: 992px) {
+  .teach-video-box,
+.temp-video-box {
+    width: 190px;
+    height: 115px;
+  }
+}
+
+.temp-video-box {
+  opacity: 0;
+  visibility: hidden;
+}
+@media screen and (min-width: 992px) {
+  .temp-video-box {
+    display: block;
+  }
+}
+
+.teach-video-box {
+  background: white;
+  left: 0;
+  bottom: 36px;
+  z-index: 99;
+}
+@media screen and (min-width: 992px) {
+  .teach-video-box {
+    left: auto;
+    bottom: auto;
+    right: 0;
+    top: 0;
+  }
+}
+
+.tabs-wrapper {
+  height: 100%;
+}
+@media screen and (min-width: 992px) {
+  .tabs-wrapper {
+    height: calc(100vh - 118px);
+  }
+}
+
+.tab-nav {
+  height: 58px;
+  border-bottom: 1px solid #EEE;
+  border-top: 1px solid #EEE;
+}
+@media screen and (min-width: 992px) {
+  .tab-nav {
+    border: none;
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
+  }
+}
+.tab-nav button {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: #a1a1a1;
+  text-align: center;
+  padding: 8px;
+  flex: 1;
+  flex-direction: column;
+  border-bottom: 2px solid transparent;
+}
+.tab-nav button * {
+  pointer-events: none;
+}
+@media screen and (min-width: 992px) {
+  .tab-nav button {
+    border-bottom: none;
+    color: #000;
+  }
+}
+.tab-nav button.active {
+  border-bottom-color: #b7b7b7;
+}
+@media screen and (min-width: 992px) {
+  .tab-nav button.active {
+    background-color: #EEE;
+  }
+}
+@media screen and (min-width: 992px) {
+  .tab-nav button:nth-child(3) {
+    flex: 0 0 38px;
+  }
+}
+.tab-nav button:nth-child(3) svg {
+  width: 80%;
+}
+.tab-nav svg {
+  width: 100%;
+  max-width: 28px;
+  height: auto;
+  display: block;
+  margin: auto;
+  fill: #b7b7b7;
+}
+@media screen and (min-width: 992px) {
+  .tab-nav svg {
+    fill: #000;
+  }
+}
+.tab-nav sup {
+  right: -2px;
+  top: 2px;
+}
+.tab-nav .group {
+  width: 28px;
+  margin: auto;
+  position: relative;
+}
+
+.tabs {
+  height: calc(100% - 58px);
+}
+.tabs svg {
+  width: 100%;
+  height: auto;
+}
+.tabs .tab {
+  height: 100%;
+}
+.tabs .msg-scroller {
+  height: calc(100% - 55px);
+  overflow: auto;
+}
+
+.msg-box {
+  flex-direction: column;
+  justify-content: flex-end;
+  line-height: 1;
+  font-size: 12px;
+  padding: 18px 12px;
+  min-height: 100%;
+}
+.msg-box .chat-msg-box + .chat-msg-box {
+  margin-top: 15px;
+}
+.msg-box .chat-msg-title {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.msg-box .chat-msg-title time {
+  font-size: 90%;
+  color: rgba(0, 0, 0, 0.5);
+}
+.msg-box .chat-msg-title .name {
+  flex: 0 0 calc(100% - 50px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.msg-box .chat-msg-text {
+  font-weight: 300;
+  padding-left: 12px;
+}
+
+.msg-type {
+  height: 55px;
+  background: #FFF;
+}
+@media screen and (max-width: 991px) {
+  .msg-type {
+    border-top: 1px solid #e0e0e0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .msg-type {
+    box-shadow: 0 -5px 9px rgba(0, 0, 0, 0.2);
+  }
+}
+.msg-type .input-msg {
+  line-height: 1.2;
+  resize: none;
+  border: none;
+  font-size: 12px;
+  background: #FFF;
+  width: calc(100% - 30px);
+  padding: 5px;
+  height: 24px;
+  margin: 0 15px 2px;
+  line-height: 1.1;
+  border-bottom: 1px solid #f5868a;
+}
+
+.icons-box {
+  padding: 0 5px;
+  padding: 0 10px;
+}
+.icons-box .btn-icons {
+  padding: 5px 8px;
+  display: inline-flex;
+  background: transparent;
+  border: none;
+}
+.icons-box .btn-attach svg {
+  width: 16px;
+}
+.icons-box .btn-emoji svg {
+  width: 15px;
+}
+.icons-box .btn-send {
+  background: #fcc302;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  padding: 6px;
+}
+.icons-box .btn-send svg {
+  width: 16px;
+}
+
+.video-scroller {
+  height: 100%;
+  overflow: auto;
+}
+@media screen and (min-width: 992px) {
+  .video-scroller {
+    height: calc(100% - 114px);
+  }
+}
+.video-scroller ul {
+  list-style: none;
+  padding: 6px 12px;
+  margin: 0;
+}
+.video-scroller li {
+  padding: 8px 0;
+}
+.video-scroller li:nth-child(3n+1) .initials {
+  background: #aae8ff;
+}
+.video-scroller li:nth-child(3n+2) .initials {
+  background: #c2ffaa;
+}
+.video-scroller li:nth-child(3n+3) .initials {
+  background: #ffaaaa;
+}
+.video-scroller .initials {
+  display: inline-flex;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.video-scroller .name {
+  text-transform: capitalize;
+  font-size: 13px;
+  padding: 0 8px;
+  flex: 0 0 calc(100% - 100px);
+}
+@media screen and (min-width: 992px) {
+  .video-scroller .name {
+    font-size: 11px;
+    flex: 0 0 calc(100% - 74px);
+  }
+}
+.video-scroller .btn-icons {
+  padding: 0;
+  width: 32px;
+  height: 32px;
+}
+@media screen and (min-width: 992px) {
+  .video-scroller .btn-icons {
+    width: 25px;
+    height: 25px;
+  }
+}
+.video-scroller .btn-icons svg {
+  width: 78%;
+}
+
+.setting-box {
+  margin-top: -59px;
+  background: #FFF;
+  z-index: 9;
+}
+.setting-box .title-box {
+  padding: 14px 12px 15px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+.setting-box .lc-group {
+  width: 30px;
+}
+.setting-box .lc-cross {
+  width: 10px;
+}
+.setting-box .title {
+  padding: 0 6px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.setting-all {
+  padding: 10px 12px;
+  font-size: 12px;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
+}
+.setting-all .setting-chat + .setting-chat {
+  margin-top: 10px;
+}
+.setting-all .btn-icons {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #737373;
+  border: none;
+}
+
+.setting-individual {
+  font-size: 13px;
+  font-weight: 700;
+}
+@media screen and (min-width: 992px) {
+  .setting-individual {
+    font-size: 12px;
+  }
+}
+.setting-individual .setting-ind {
+  padding: 10px 8px;
+}
+.setting-individual .btn-icons {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+}
+@media screen and (min-width: 992px) {
+  .setting-individual .btn-icons {
+    width: 22px;
+    height: 22px;
+  }
+}
+.setting-individual .at-name {
+  flex-grow: 1;
+  padding-right: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 96px);
+}
+@media screen and (min-width: 992px) {
+  .setting-individual .at-name {
+    max-width: calc(100% - 72px);
+  }
+}
+
+.edit-box {
+  position: absolute;
+  right: 10px;
+  bottom: 36px;
+  z-index: 9;
+}
+@media screen and (min-width: 992px) {
+  .edit-box {
+    bottom: 50px;
+  }
+}
+.edit-box .btn-icons {
+  width: 30px;
+  height: 30px;
+  background: #FFF;
+  margin-bottom: 10px;
+}
+.edit-box .btn-icons:hover {
+  background: #a5a5a5;
+}
+.edit-box svg {
+  width: 20px;
+}
+
+.toggle-sidebar {
+  left: 0;
+  z-index: 99;
+  background: #FFF;
+  margin-left: -26px;
+  padding: 2px 8px 3px;
+  border-radius: 5px 0 0 5px;
+  opacity: 0;
+  visibility: hidden;
+}
+.toggle-sidebar svg {
+  width: 10px;
+  fill: #656565;
+}
+
+.aside:hover .toggle-sidebar {
+  opacity: 1;
+  visibility: visible;
+}
+
+.control-box {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 5px;
+  text-align: center;
+}
+.control-box .btn-icons {
+  width: 25px;
+  height: 25px;
+}
+
+.other-video-box {
+  border: 2px solid white;
+  background-color: white;
+}
+
+@media screen and (max-width: 991px) {
+  .other-video-box {
+    max-width: 190px;
+    position: fixed;
+    width: 26%;
+    height: auto;
+    top: calc(100vw/1.64);
+    transform: translateY(-205%);
+  }
+
+  .overlay {
+    position: fixed;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .attendee-box .toolbar {
+    display: flex;
+  }
+}
+.attendee-box .toolbar-row {
+  width: 100%;
+}
+.attendee-box .btn-video-filled,
+.attendee-box .btn-audio-filled {
+  border: 1px solid #bfbfbf;
+  background-color: #FFF;
+  margin: 0 8px;
+  width: 44px;
+  height: 44px;
+  background-size: 65%;
+}
+@media screen and (min-width: 992px) {
+  .attendee-box .btn-video-filled,
+.attendee-box .btn-audio-filled {
+    margin: 8px;
+    width: 32px;
+    height: 32px;
+  }
+}
+.attendee-box .btn-video-filled.disabled,
+.attendee-box .btn-audio-filled.disabled {
+  border-color: #ed1c24 !important;
+}
+.attendee-box .teach-video-box,
+.attendee-box .other-video-box {
+  left: auto;
+  right: 0;
+}
+.attendee-box .teach-video-box {
+  bottom: 0;
+}
+@media screen and (max-width: 991px) {
+  .attendee-box .video-scroller {
+    height: calc(100% - 64px);
+  }
+}
+.attendee-box .video-scroller .name {
+  flex: 1;
+}
+.attendee-box .video-controll {
+  padding: 10px;
+  text-align: center;
+}
