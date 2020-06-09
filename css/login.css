@@ -672,11 +672,6 @@ ul {
     justify-content: center;
   }
 }
-.right-col .img-fluid {
-  display: block;
-  margin: 0 0 40px;
-  max-width: 100px;
-}
 
 .left-col {
   display: none;
@@ -701,6 +696,11 @@ ul {
     padding: 70px 20px 30px;
     border-radius: 3px;
   }
+.right-col .img-fluid {
+  display: block;
+  margin: 0 0 40px;
+  max-width: 100px;
+}
 }
 .login-form h1 {
   color: #111;
