@@ -13,7 +13,7 @@
 <body>
     <div class="wrapper" id="wrapper">
         <header class="main-header" id="mainHeader">
-            <a href="/">
+            <a href="/" class="logo">
                 <img src="/img/logo.png" alt="livecast" class="img-fluid" />
             </a>
         </header>
@@ -330,13 +330,14 @@
         } else {
             moveDropdown2Nav();
         }
-        window.resize = function() {
+        document.addEventListener('resize', function() {
+            debugger
             if(window.innerWidth <= 767) {
                 moveDropdown2Head()
             } else {
                 moveDropdown2Nav();
             }
-        }
+        }, false);
 
     </script>
 </body>
