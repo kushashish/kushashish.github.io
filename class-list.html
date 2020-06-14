@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveCast</title>
+    <link rel="icon" href="img/logo.png" type="image/png" sizes="16x16" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap" rel="preload stylesheet" as="font">
+    <link rel="preload stylesheet" href="/css/classList.css" as="style" />
+</head>
+
+<body>
+    <div class="wrapper" id="wrapper">
+        <header class="main-header" id="mainHeader">
+            <a href="/">
+                <img src="/img/logo.png" alt="livecast" class="img-fluid" />
+            </a>
+        </header>
+        <main class="main">
+            <div class="tabs-header" id="tabsHeader">
+                <nav class="tabs" id="tabs">
+                    <a href="#upcomming" class="active">Upcomming Classes</a>
+                    <a href="#previous">Previous Classes</a>
+                </nav>
+                <div class="dropdown" id="dateDropdown">
+                    <span class="selected">
+                        <span>13th June 2020</span>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13.015px" height="8px" viewBox="0 0 13.015 8" enable-background="new 0 0 13.015 8" xml:space="preserve">
+                            <path d="M6.507,8C6.274,8,6.041,7.904,5.862,7.712L0.268,1.678c-0.356-0.384-0.356-1.006,0-1.39c0.355-0.384,0.933-0.384,1.288,0 l4.951,5.339l4.951-5.339c0.356-0.384,0.934-0.384,1.289,0c0.356,0.384,0.356,1.006,0,1.39L7.151,7.713C6.974,7.904,6.741,8,6.507,8 z"/>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            
+            <section class="tab-content-box">
+                <div id="upcomming" class="tab-content active">
+                    <div class="card-list">
+                        <div class="class-card live-card">
+                            <div class="live-head">
+                                <span>Live Now</span>
+                            </div>
+                            <div class="class-card__content">
+                                <div class="presentee-img">
+                                    <img src="/img/user/user1.png" alt="user" />
+                                </div>
+                                <div class="presentee-name">Presentee Name</div>
+                                <div class="topic">Analytics and Research Analytics and Research</div>
+                                <div class="action-box">
+                                    <div class="d-flex align-items-center">
+                                        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 512c-141.164062 0-256-114.835938-256-256s114.835938-256 256-256 256 114.835938 256 256-114.835938 256-256 256zm0-480c-123.519531 0-224 100.480469-224 224s100.480469 224 224 224 224-100.480469 224-224-100.480469-224-224-224zm0 0"/><path d="m368 394.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-112-112c-3.007812-3.007812-4.691406-7.082031-4.691406-11.304687v-149.335938c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v142.699219l107.308594 107.308594c6.25 6.25 6.25 16.382812 0 22.632812-3.117188 3.136719-7.210938 4.695313-11.308594 4.695313zm0 0"/></svg>
+                                        <span>3:30 – 4:30 pm</span>
+                                    </div>
+                                    <button class="btn btn-orange">Enter Class</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="class-card">
+                            <div class="live-head">
+                                <span>Live Now</span>
+                            </div>
+                            <div class="class-card__content">
+                                <div class="presentee-img">
+                                    <img src="/img/user/user2.png" alt="user" />
+                                </div>
+                                <div class="presentee-name">Presentee Name</div>
+                                <div class="topic">Analytics and Research Analytics and Research</div>
+                                <div class="action-box">
+                                    <div class="d-flex align-items-center">
+                                        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 512c-141.164062 0-256-114.835938-256-256s114.835938-256 256-256 256 114.835938 256 256-114.835938 256-256 256zm0-480c-123.519531 0-224 100.480469-224 224s100.480469 224 224 224 224-100.480469 224-224-100.480469-224-224-224zm0 0"/><path d="m368 394.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-112-112c-3.007812-3.007812-4.691406-7.082031-4.691406-11.304687v-149.335938c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v142.699219l107.308594 107.308594c6.25 6.25 6.25 16.382812 0 22.632812-3.117188 3.136719-7.210938 4.695313-11.308594 4.695313zm0 0"/></svg>
+                                        <div>
+                                            <span class="d-block">Monday, June 9</span>
+                                            <span class="d-block">3:30 – 4:30 pm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="class-card live-card">
+                            <div class="live-head">
+                                <span>Live Now</span>
+                            </div>
+                            <div class="class-card__content">
+                                <div class="presentee-img">
+                                    <img src="/img/user/user3.png" alt="user" />
+                                </div>
+                                <div class="presentee-name">Presentee Name</div>
+                                <div class="topic">Analytics and Research Analytics and Research</div>
+                                <div class="action-box">
+                                    <div class="d-flex align-items-center">
+                                        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 512c-141.164062 0-256-114.835938-256-256s114.835938-256 256-256 256 114.835938 256 256-114.835938 256-256 256zm0-480c-123.519531 0-224 100.480469-224 224s100.480469 224 224 224 224-100.480469 224-224-100.480469-224-224-224zm0 0"/><path d="m368 394.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-112-112c-3.007812-3.007812-4.691406-7.082031-4.691406-11.304687v-149.335938c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v142.699219l107.308594 107.308594c6.25 6.25 6.25 16.382812 0 22.632812-3.117188 3.136719-7.210938 4.695313-11.308594 4.695313zm0 0"/></svg>
+                                        <span>3:30 – 4:30 pm</span>
+                                    </div>
+                                    <button class="btn btn-orange">Enter Class</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="class-card">
+                            <div class="live-head">
+                                <span>Live Now</span>
+                            </div>
+                            <div class="class-card__content">
+                                <div class="presentee-img">
+                                    <img src="/img/user/user4.png" alt="user" />
+                                </div>
+                                <div class="presentee-name">Presentee Name</div>
+                                <div class="topic">Analytics and Research Analytics and Research</div>
+                                <div class="action-box">
+                                    <div class="d-flex align-items-center">
+                                        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 512c-141.164062 0-256-114.835938-256-256s114.835938-256 256-256 256 114.835938 256 256-114.835938 256-256 256zm0-480c-123.519531 0-224 100.480469-224 224s100.480469 224 224 224 224-100.480469 224-224-100.480469-224-224-224zm0 0"/><path d="m368 394.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-112-112c-3.007812-3.007812-4.691406-7.082031-4.691406-11.304687v-149.335938c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v142.699219l107.308594 107.308594c6.25 6.25 6.25 16.382812 0 22.632812-3.117188 3.136719-7.210938 4.695313-11.308594 4.695313zm0 0"/></svg>
+                                        <div>
+                                            <span class="d-block">Monday, June 9</span>
+                                            <span class="d-block">3:30 – 4:30 pm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="class-card live-card">
+                            <div class="live-head">
+                                <span>Live Now</span>
+                            </div>
+                            <div class="class-card__content">
+                                <div class="presentee-img">
+                                    <img src="/img/user/user5.png" alt="user" />
+                                </div>
+                                <div class="presentee-name">Presentee Name</div>
+                                <div class="topic">Analytics and Research Analytics and Research</div>
+                                <div class="action-box">
+                                    <div class="d-flex align-items-center">
+                                        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 512c-141.164062 0-256-114.835938-256-256s114.835938-256 256-256 256 114.835938 256 256-114.835938 256-256 256zm0-480c-123.519531 0-224 100.480469-224 224s100.480469 224 224 224 224-100.480469 224-224-100.480469-224-224-224zm0 0"/><path d="m368 394.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-112-112c-3.007812-3.007812-4.691406-7.082031-4.691406-11.304687v-149.335938c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v142.699219l107.308594 107.308594c6.25 6.25 6.25 16.382812 0 22.632812-3.117188 3.136719-7.210938 4.695313-11.308594 4.695313zm0 0"/></svg>
+                                        <span>3:30 – 4:30 pm</span>
+                                    </div>
+                                    <button class="btn btn-orange">Enter Class</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="class-card">
+                            <div class="live-head">
+                                <span>Live Now</span>
+                            </div>
+                            <div class="class-card__content">
+                                <div class="presentee-img">
+                                    <img src="/img/user/user6.png" alt="user" />
+                                </div>
+                                <div class="presentee-name">Presentee Name</div>
+                                <div class="topic">Analytics and Research Analytics and Research</div>
+                                <div class="action-box">
+                                    <div class="d-flex align-items-center">
+                                        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 512c-141.164062 0-256-114.835938-256-256s114.835938-256 256-256 256 114.835938 256 256-114.835938 256-256 256zm0-480c-123.519531 0-224 100.480469-224 224s100.480469 224 224 224 224-100.480469 224-224-100.480469-224-224-224zm0 0"/><path d="m368 394.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-112-112c-3.007812-3.007812-4.691406-7.082031-4.691406-11.304687v-149.335938c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v142.699219l107.308594 107.308594c6.25 6.25 6.25 16.382812 0 22.632812-3.117188 3.136719-7.210938 4.695313-11.308594 4.695313zm0 0"/></svg>
+                                        <div>
+                                            <span class="d-block">Monday, June 9</span>
+                                            <span class="d-block">3:30 – 4:30 pm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="previous" class="tab-content">
+                    <div class="card-list">
+
+                        <div class="prev-card">
+                            <div class="prev-card__header">
+                                <img src="/img/bg/bg1.jpg" alt="bg">
+                                <div class="title">Analytics and Research Analytics and Research</div>
+                            </div>
+                            <div class="prev-card__body">
+                                <div class="img-box">
+                                    <img src="/img/user/user1.png" alt="user1">
+                                </div>
+                                <div class="info">
+                                    <div class="name">Presenter Name</div>
+                                    <div class="duration">
+                                        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 512c-141.164062 0-256-114.835938-256-256s114.835938-256 256-256 256 114.835938 256 256-114.835938 256-256 256zm0-480c-123.519531 0-224 100.480469-224 224s100.480469 224 224 224 224-100.480469 224-224-100.480469-224-224-224zm0 0"/><path d="m368 394.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-112-112c-3.007812-3.007812-4.691406-7.082031-4.691406-11.304687v-149.335938c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v142.699219l107.308594 107.308594c6.25 6.25 6.25 16.382812 0 22.632812-3.117188 3.136719-7.210938 4.695313-11.308594 4.695313zm0 0"/></svg>
+                                        <span>1 hour 30  min</span>
+                                    </div>
+                                    <button class="btn btn-orange">Watch Recording</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="prev-card">
+                            <div class="prev-card__header">
+                                <img src="/img/bg/bg2.jpg" alt="bg">
+                                <div class="title">Analytics and Research Analytics and Research</div>
+                            </div>
+                            <div class="prev-card__body">
+                                <div class="img-box">
+                                    <img src="/img/user/user2.png" alt="user1">
+                                </div>
+                                <div class="info">
+                                    <div class="name">Presenter Name</div>
+                                    <div class="duration">
+                                        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 512c-141.164062 0-256-114.835938-256-256s114.835938-256 256-256 256 114.835938 256 256-114.835938 256-256 256zm0-480c-123.519531 0-224 100.480469-224 224s100.480469 224 224 224 224-100.480469 224-224-100.480469-224-224-224zm0 0"/><path d="m368 394.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-112-112c-3.007812-3.007812-4.691406-7.082031-4.691406-11.304687v-149.335938c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v142.699219l107.308594 107.308594c6.25 6.25 6.25 16.382812 0 22.632812-3.117188 3.136719-7.210938 4.695313-11.308594 4.695313zm0 0"/></svg>
+                                        <span>30  min</span>
+                                    </div>
+                                    <button class="btn btn-orange">Watch Recording</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="prev-card">
+                            <div class="prev-card__header">
+                                <img src="/img/bg/bg3.jpg" alt="bg">
+                                <div class="title">Analytics and Research Analytics and Research</div>
+                            </div>
+                            <div class="prev-card__body">
+                                <div class="img-box">
+                                    <img src="/img/user/user3.png" alt="user1">
+                                </div>
+                                <div class="info">
+                                    <div class="name">Presenter Name</div>
+                                    <div class="duration">
+                                        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 512c-141.164062 0-256-114.835938-256-256s114.835938-256 256-256 256 114.835938 256 256-114.835938 256-256 256zm0-480c-123.519531 0-224 100.480469-224 224s100.480469 224 224 224 224-100.480469 224-224-100.480469-224-224-224zm0 0"/><path d="m368 394.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-112-112c-3.007812-3.007812-4.691406-7.082031-4.691406-11.304687v-149.335938c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v142.699219l107.308594 107.308594c6.25 6.25 6.25 16.382812 0 22.632812-3.117188 3.136719-7.210938 4.695313-11.308594 4.695313zm0 0"/></svg>
+                                        <span>1 hour 30  min</span>
+                                    </div>
+                                    <button class="btn btn-orange">Watch Recording</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="prev-card">
+                            <div class="prev-card__header">
+                                <img src="/img/bg/bg4.jpg" alt="bg">
+                                <div class="title">Analytics and Research Analytics and Research</div>
+                            </div>
+                            <div class="prev-card__body">
+                                <div class="img-box">
+                                    <img src="/img/user/user4.png" alt="user1">
+                                </div>
+                                <div class="info">
+                                    <div class="name">Presenter Name</div>
+                                    <div class="duration">
+                                        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 512c-141.164062 0-256-114.835938-256-256s114.835938-256 256-256 256 114.835938 256 256-114.835938 256-256 256zm0-480c-123.519531 0-224 100.480469-224 224s100.480469 224 224 224 224-100.480469 224-224-100.480469-224-224-224zm0 0"/><path d="m368 394.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-112-112c-3.007812-3.007812-4.691406-7.082031-4.691406-11.304687v-149.335938c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v142.699219l107.308594 107.308594c6.25 6.25 6.25 16.382812 0 22.632812-3.117188 3.136719-7.210938 4.695313-11.308594 4.695313zm0 0"/></svg>
+                                        <span>1 hour 30  min</span>
+                                    </div>
+                                    <button class="btn btn-orange">Watch Recording</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="prev-card">
+                            <div class="prev-card__header">
+                                <img src="/img/bg/bg5.jpg" alt="bg">
+                                <div class="title">Analytics and Research Analytics and Research</div>
+                            </div>
+                            <div class="prev-card__body">
+                                <div class="img-box">
+                                    <img src="/img/user/user5.png" alt="user1">
+                                </div>
+                                <div class="info">
+                                    <div class="name">Presenter Name</div>
+                                    <div class="duration">
+                                        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 512c-141.164062 0-256-114.835938-256-256s114.835938-256 256-256 256 114.835938 256 256-114.835938 256-256 256zm0-480c-123.519531 0-224 100.480469-224 224s100.480469 224 224 224 224-100.480469 224-224-100.480469-224-224-224zm0 0"/><path d="m368 394.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-112-112c-3.007812-3.007812-4.691406-7.082031-4.691406-11.304687v-149.335938c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v142.699219l107.308594 107.308594c6.25 6.25 6.25 16.382812 0 22.632812-3.117188 3.136719-7.210938 4.695313-11.308594 4.695313zm0 0"/></svg>
+                                        <span>1 hour 30  min</span>
+                                    </div>
+                                    <button class="btn btn-orange">Watch Recording</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="prev-card">
+                            <div class="prev-card__header">
+                                <img src="/img/bg/bg1.jpg" alt="bg">
+                                <div class="title">Analytics and Research Analytics and Research</div>
+                            </div>
+                            <div class="prev-card__body">
+                                <div class="img-box">
+                                    <img src="/img/user/user1.png" alt="user1">
+                                </div>
+                                <div class="info">
+                                    <div class="name">Presenter Name</div>
+                                    <div class="duration">
+                                        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 512c-141.164062 0-256-114.835938-256-256s114.835938-256 256-256 256 114.835938 256 256-114.835938 256-256 256zm0-480c-123.519531 0-224 100.480469-224 224s100.480469 224 224 224 224-100.480469 224-224-100.480469-224-224-224zm0 0"/><path d="m368 394.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-112-112c-3.007812-3.007812-4.691406-7.082031-4.691406-11.304687v-149.335938c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v142.699219l107.308594 107.308594c6.25 6.25 6.25 16.382812 0 22.632812-3.117188 3.136719-7.210938 4.695313-11.308594 4.695313zm0 0"/></svg>
+                                        <span>1 hour 30  min</span>
+                                    </div>
+                                    <button class="btn btn-orange">Watch Recording</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        let tabs = document.getElementById('tabs');
+        tabs.addEventListener('click', function(event) {
+            event.preventDefault();
+            let target = event.target;
+            if(target.nodeName === 'A' && !target.classList.contains('active')) {
+                let id = target.getAttribute('href');
+                let tabs = document.querySelectorAll('.tabs a');
+                tabs.forEach((tab) => tab.classList.remove('active'));
+                target.classList.add('active');
+                let contents = document.querySelectorAll('.tab-content');
+                contents.forEach((el) => el.classList.remove('active'));
+                document.querySelector(id).classList.add('active');
+                if(id === '#previous') {
+                    dateDropdown.classList.add('active');
+                } else {
+                    dateDropdown.classList.remove('active');
+                }
+            }
+        });
+        function moveDropdown2Head() {
+            let el = dateDropdown.parentElement.removeChild(dateDropdown);
+            mainHeader.appendChild(el)
+        }
+        function moveDropdown2Nav() {
+            let el = dateDropdown.parentElement.removeChild(dateDropdown);
+            tabsHeader.appendChild(el)
+        }
+
+        if(window.innerWidth <= 767) {
+            moveDropdown2Head()
+        } else {
+            moveDropdown2Nav();
+        }
+        window.resize = function() {
+            if(window.innerWidth <= 767) {
+                moveDropdown2Head()
+            } else {
+                moveDropdown2Nav();
+            }
+        }
+
+    </script>
+</body>
+</html>
