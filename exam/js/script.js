@@ -90,6 +90,22 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    // hamburger menu
+    const menuBtn = document.querySelector("#hamburger");
+    if(menuBtn) {
+        menuBtn.addEventListener("click", function() {
+            document.body.classList.add('menu-active')
+        });
+    }
+
+    const closeNavBtn = document.querySelector("#navOverlay");
+    if(closeNavBtn) {
+        closeNavBtn.addEventListener("click", function() {
+            document.body.classList.remove('menu-active')
+        });
+    }
+    
+
     // suffle switch
     const suffleBtns = document.querySelectorAll(".suffle-switch .box");
     if(suffleBtns) {
