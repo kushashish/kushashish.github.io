@@ -104,7 +104,6 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.classList.remove('menu-active')
         });
     }
-    
 
     // suffle switch
     const suffleBtns = document.querySelectorAll(".suffle-switch .box");
@@ -221,6 +220,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // accordian right box
+    const _btns = document.querySelectorAll(".accordian-box a");
+    if(_btns.length) {
+        for (let i=0; i<_btns.length; i++) {
+            const _boxes = document.querySelectorAll(".accordian-box .box");
+            _btns[i].addEventListener("click", function(event) {
+                event.preventDefault();
+                _btns.forEach((item, i) => {
+                    item.classList.remove('active');
+                    _boxes[i].classList.remove('active');
+                });
+                this.classList.add('active');
+                const boxId = this.getAttribute('href');
+                document.querySelector(boxId).classList.add('active')
+            });
+        }
+    }
     
 
 });
