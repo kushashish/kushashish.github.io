@@ -224,19 +224,83 @@ document.addEventListener('DOMContentLoaded', function() {
     const _btns = document.querySelectorAll(".accordian-box a");
     if(_btns.length) {
         for (let i=0; i<_btns.length; i++) {
-            const _boxes = document.querySelectorAll(".accordian-box .box");
             _btns[i].addEventListener("click", function(event) {
                 event.preventDefault();
-                _btns.forEach((item, i) => {
-                    item.classList.remove('active');
-                    _boxes[i].classList.remove('active');
-                });
+                const buttons = this.parentElement.children;
+                const mainBox = this.parentElement.parentElement.children[1].children;
+                for(let i=0; i<buttons.length; i++) {
+                    buttons[i].classList.remove('active');
+                    mainBox[i].classList.remove('active');
+                }
                 this.classList.add('active');
                 const boxId = this.getAttribute('href');
                 document.querySelector(boxId).classList.add('active')
             });
         }
     }
+
+    const userViewBtn = document.querySelector("#userView");
+    if(userViewBtn) {
+        userViewBtn.addEventListener('change', function() {
+            if(this.value == 0) return false;
+            examWrapper.classList.add('d-none');
+            userWrapper.classList.remove('d-none');
+        });
+    }
+
+    const profileBtn = document.querySelector('.user-box');
+    if(profileBtn && window.innerWidth > 767) {
+        profileBtn.addEventListener('click', function() {
+            this.classList.toggle('profile-active');
+        });
+    }
     
+    const btnCols = document.querySelectorAll('.btn-col');
+    if(btnCols) {
+        for (let i = 0; i < btnCols.length; i++) {
+            btnCols[i].addEventListener('click', function() {
+                const type = this.getAttribute('data-type');
+                for (let j = 0; j < btnCols.length; j++) {
+                    btnCols[j].classList.remove('active');
+                }
+                this.classList.add('active');
+                if(type === 'col') {
+                    bordWrapper.classList.remove('rows');
+                    bordWrapper.classList.add('colm');
+                }
+                if(type === 'row') {
+                    bordWrapper.classList.remove('colm');
+                    bordWrapper.classList.add('rows');
+                }
+            });
+        }
+    }
+
+    // document.addEventListener('click', function(event) {
+        // event.preventDefault();
+        // const target = event.target;
+        // const isProfileActive = document.querySelector('.user-box.profile-active');
+        // if(!isParents(target, 'user-box') && isProfileActive) {
+        //     document.querySelector('.user-box').classList.remove('profile-active');
+        // }
+    // });
+    
+    const customDDBtn = document.querySelector('.dd-title');
+    if(customDDBtn) {
+        customDDBtn.addEventListener('click', function() {
+            this.classList.toggle('active');
+        })
+    }
+
+    // function isParents(currentElm, parentSelector) {
+    //     while(currentElm.parentNode != null && currentElm.parentNode != document.documentElement) {
+    //         if(currentElm.classList.contains(parentSelector)) {
+    //             return true;
+    //             break;
+    //         }
+    //         currentElm = currentElm.parentNode;
+    //     }
+    //     return false; 
+    //  }
 
 });

@@ -1,0 +1,90 @@
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    background: rgba(#000, 0.5);
+    z-index: 99;
+}
+.nav {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    background-color: #383a40;
+    width: 290px;
+    @include media-breakpoint-down(md) {
+        transition: left 0.3s ease-out;
+    }
+    @include media-breakpoint-up(md) {
+        position: static;
+        display: block;
+        flex: 0 0 100px;
+        width: 101px;
+        border-right: 1px solid #ececec;
+        text-align: center;
+    }
+    .nav-items {
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: rem(24px);
+        margin: 0 0 8px;
+        padding: 18px 37px;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background 0.2s;
+        @include media-breakpoint-up(md) {
+            display: block;
+            padding: 18px 10px;
+            border-radius: 4px 0 0 4px;
+            font-size: rem(14px);
+        }
+
+        &:not(.active):hover {
+            background: $blue;
+        }
+        svg {
+            fill: white;
+            max-width: 36px;
+            max-height: 34px;
+            flex: 0 0 36px;
+            margin: 0 15px 0 0;
+            @include media-breakpoint-up(md) {
+                margin: 0;
+            }
+        }
+        span {
+            display: block;
+        }
+    }
+    .active {
+        background: white;
+        color: #383a40;
+        svg {
+            fill: #383a40;
+        }
+    }
+}
+
+.menu-active {
+    .nav {
+        left: 0;
+    }
+    .overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+    .user-info-box {
+        width: 100%;
+        padding: 20px;
+        border-bottom: 1px solid #ececec;
+    }
+    .divider {
+        border-bottom-color: #6b6b6b;
+    }
+}

@@ -1,406 +1,484 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="https://kushashish.github.io/exam/img/favicon.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://kushashish.github.io/exam/css/style.css">
-    <title>Exam Solutions</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      
-      <header class="main-header">
-        <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
-            <button id="hamburger" class="btn-hamburger d-md-none">
-                <img src="https://kushashish.github.io/exam/img/svg/hamburger.svg" alt="menu burger">
-            </button>
-            <a href="/" class="logo">
-                <img class="img-fluid" src="https://kushashish.github.io/exam/img/logo.png" alt="Exam Solution">
-            </a>
-            <div class="user-box align-items-md-center d-none d-md-flex">
-                <div class="profile-box flex-center-center">
-                    <img class="img-fluid" src="https://kushashish.github.io/exam/img/svg/profile.svg" alt="Kush Sharma">
-                </div>
-                <div>Kush Sharma</div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="https://kushashish.github.io/exam/img/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://kushashish.github.io/exam/css/style.css">
+  <title>Exam Solutions</title>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="main-header">
+      <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+        <button id="hamburger" class="btn-hamburger d-md-none">
+          <img src="https://kushashish.github.io/exam/img/svg/hamburger.svg" alt="menu burger">
+        </button>
+        <a href="https://kushashish.github.io/exam/index.html" class="logo">
+          <img class="img-fluid" src="https://kushashish.github.io/exam/img/logo.png" alt="Exam Solution">
+        </a>
+        <div class="user-box flex-start-center relative">
+          <div class="user-info-box align-items-md-center d-none d-md-flex pointer">
+            <div class="user-img-box flex-center-center">
+              <img class="img-fluid" src="https://kushashish.github.io/exam/img/svg/profile.svg" alt="Kush Sharma">
             </div>
+            <div class="user-name">Kush Sharma</div>
+          </div>
+          <div class="profile-box">
+            <div class="d-flex">
+              <div class="left-box">
+                <div class="img-box">
+                  <img class="img-fluid" src="https://kushashish.github.io/exam/img/svg/profile.svg" alt="Kush Sharma">
+                </div>
+              </div>
+              <div class="right-box">
+                <div class="text"><strong>Kush Sharma</strong></div>
+                <div class="text">(kushsarma@gmail.com)</div>
+                <div class="text"><strong>Class:</strong> XII</div>
+                <div class="text"><strong>Batch:</strong> Bacth I</div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <a href="javascript:void(0)" class="link openModal" data-target="changePwd">Change Password</a>
+            <a href="javascript:void(0)" class="link">Help</a>
+            <a href="javascript:void(0)" class="link">Settings</a>
+            <div class="divider"></div>
+            <a href="javascript:void(0)" class="link mb-3">Sign out</a>
+          </div>
         </div>
+      </div>
     </header>
 
-      <div class="main-content">
-        <div class="container">
-          <div class="content-wrapper d-flex">
-<div class="overlay" id="navOverlay"></div>
-<nav class="nav">
-    <div class="user-box align-items-md-center d-flex d-md-none">
-        <div class="profile-box flex-center-center">
-            <img class="img-fluid" src="https://kushashish.github.io/exam/img/svg/profile-white.svg" alt="Kush Sharma">
-        </div>
-        <div>Kush Sharma</div>
-    </div>
-    <a class="nav-items active" href="https://kushashish.github.io/exam/index.html">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-            <g>
-                <g>
-                    <path d="M387.587,95.376L297.624,4.413C294.892,1.674,289.457,0,287,0H15C6.709,0,0,6.709,0,15v482c0,8.291,6.709,15,15,15h362
-                        c8.291,0,15-6.709,15-15V106C392,103.658,390.356,98.137,387.587,95.376z M175.606,356.605l-60,60
-                        c-2.93,2.93-6.768,4.395-10.605,4.395c-3.837,0-7.676-1.465-10.605-4.395l-30-30c-5.861-5.859-5.861-15.351-0.001-21.21
-                        c5.859-5.859,15.352-5.859,21.211,0L105,384.789l49.395-49.395c5.859-5.859,15.352-5.859,21.211,0
-                        S181.465,350.746,175.606,356.605z M175.606,236.605l-60,60c-2.93,2.93-6.768,4.395-10.605,4.395
-                        c-3.837,0-7.676-1.465-10.605-4.395l-30-30c-5.861-5.859-5.861-15.351-0.001-21.21c5.859-5.859,15.352-5.859,21.211,0L105,264.789
-                        l49.395-49.395c5.859-5.859,15.352-5.859,21.211,0S181.465,230.746,175.606,236.605z M175.606,116.605l-60,60
-                        c-2.93,2.93-6.768,4.395-10.605,4.395c-3.837,0-7.676-1.465-10.605-4.395l-30-30c-5.861-5.859-5.861-15.351-0.001-21.21
-                        c5.859-5.859,15.352-5.859,21.211,0L105,144.789l49.395-49.395c5.859-5.859,15.352-5.859,21.211,0
-                        S181.465,110.746,175.606,116.605z M317,421h-92c-8.291,0-15-6.709-15-15c0-8.291,6.709-15,15-15h92c8.291,0,15,6.709,15,15
-                        C332,414.291,325.291,421,317,421z M317,301h-92c-8.291,0-15-6.709-15-15c0-8.291,6.709-15,15-15h92c8.291,0,15,6.709,15,15
-                        C332,294.291,325.291,301,317,301z M317,181h-92c-8.291,0-15-6.709-15-15s6.709-15,15-15h92c8.291,0,15,6.709,15,15
-                        S325.291,181,317,181z M302,91V52.211L340.789,91H302z"/>
-                </g>
-            </g>
-            <g>
-                <g>
-                    <path d="M467,91c-24.814,0-45,20.186-45,45c0,26.041,0,48.959,0,75h90c0-26.041,0-48.959,0-75C512,111.186,491.814,91,467,91z
-                        M482,151h-30v-15c0-8.276,6.724-15,15-15s15,6.724,15,15V151z"/>
-                </g>
-            </g>
-            <g>
-                <g>
-                    <path d="M422,391v15c0,2.329,0.542,4.629,1.582,6.709l30,60c5.528,11.025,21.308,11.025,26.836,0l30-60
-                        c1.04-2.08,1.582-4.38,1.582-6.709v-15H422z"/>
-                </g>
-            </g>
-            <g>
-                <g>
-                    <rect x="422" y="241" width="90" height="120"/>
-                </g>
-            </g>
-        </svg>
-        <span>New Exam</span>
-    </a>
-    <a class="nav-items" href="https://kushashish.github.io/exam/exam-list.html">
-        <svg id="Layer_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m72 144c-39.701 0-72-32.299-72-72s32.299-72 72-72 72 32.299 72 72-32.299 72-72 72zm0-112c-22.056 0-40 17.944-40 40s17.944 40 40 40 40-17.944 40-40-17.944-40-40-40z"/><path d="m72 328c-39.701 0-72-32.299-72-72s32.299-72 72-72 72 32.299 72 72-32.299 72-72 72zm0-112c-22.056 0-40 17.944-40 40s17.944 40 40 40 40-17.944 40-40-17.944-40-40-40z"/><path d="m72 512c-39.701 0-72-32.299-72-72s32.299-72 72-72 72 32.299 72 72-32.299 72-72 72zm0-112c-22.056 0-40 17.944-40 40s17.944 40 40 40 40-17.944 40-40-17.944-40-40-40z"/><path d="m440 144h-192c-39.701 0-72-32.299-72-72s32.299-72 72-72h192c39.701 0 72 32.299 72 72s-32.299 72-72 72z"/><path d="m440 328h-192c-39.701 0-72-32.299-72-72s32.299-72 72-72h192c39.701 0 72 32.299 72 72s-32.299 72-72 72z"/><path d="m440 512h-192c-39.701 0-72-32.299-72-72s32.299-72 72-72h192c39.701 0 72 32.299 72 72s-32.299 72-72 72z"/></g></svg>
-        <span>Exam List</span>
-    </a>
-    <a class="nav-items" href="https://kushashish.github.io/exam/results.html">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-            <g>
-                <g>
-                    <path d="M387.587,95.376L297.624,4.413C294.892,1.674,289.457,0,287,0H15C6.709,0,0,6.709,0,15v482c0,8.291,6.709,15,15,15h362
-                        c8.291,0,15-6.709,15-15V106C392,103.658,390.356,98.137,387.587,95.376z M175.606,356.605l-60,60
-                        c-2.93,2.93-6.768,4.395-10.605,4.395c-3.837,0-7.676-1.465-10.605-4.395l-30-30c-5.861-5.859-5.861-15.351-0.001-21.21
-                        c5.859-5.859,15.352-5.859,21.211,0L105,384.789l49.395-49.395c5.859-5.859,15.352-5.859,21.211,0
-                        S181.465,350.746,175.606,356.605z M175.606,236.605l-60,60c-2.93,2.93-6.768,4.395-10.605,4.395
-                        c-3.837,0-7.676-1.465-10.605-4.395l-30-30c-5.861-5.859-5.861-15.351-0.001-21.21c5.859-5.859,15.352-5.859,21.211,0L105,264.789
-                        l49.395-49.395c5.859-5.859,15.352-5.859,21.211,0S181.465,230.746,175.606,236.605z M175.606,116.605l-60,60
-                        c-2.93,2.93-6.768,4.395-10.605,4.395c-3.837,0-7.676-1.465-10.605-4.395l-30-30c-5.861-5.859-5.861-15.351-0.001-21.21
-                        c5.859-5.859,15.352-5.859,21.211,0L105,144.789l49.395-49.395c5.859-5.859,15.352-5.859,21.211,0
-                        S181.465,110.746,175.606,116.605z M317,421h-92c-8.291,0-15-6.709-15-15c0-8.291,6.709-15,15-15h92c8.291,0,15,6.709,15,15
-                        C332,414.291,325.291,421,317,421z M317,301h-92c-8.291,0-15-6.709-15-15c0-8.291,6.709-15,15-15h92c8.291,0,15,6.709,15,15
-                        C332,294.291,325.291,301,317,301z M317,181h-92c-8.291,0-15-6.709-15-15s6.709-15,15-15h92c8.291,0,15,6.709,15,15
-                        S325.291,181,317,181z M302,91V52.211L340.789,91H302z"/>
-                </g>
-            </g>
-            <g>
-                <g>
-                    <path d="M467,91c-24.814,0-45,20.186-45,45c0,26.041,0,48.959,0,75h90c0-26.041,0-48.959,0-75C512,111.186,491.814,91,467,91z
-                        M482,151h-30v-15c0-8.276,6.724-15,15-15s15,6.724,15,15V151z"/>
-                </g>
-            </g>
-            <g>
-                <g>
-                    <path d="M422,391v15c0,2.329,0.542,4.629,1.582,6.709l30,60c5.528,11.025,21.308,11.025,26.836,0l30-60
-                        c1.04-2.08,1.582-4.38,1.582-6.709v-15H422z"/>
-                </g>
-            </g>
-            <g>
-                <g>
-                    <rect x="422" y="241" width="90" height="120"/>
-                </g>
-            </g>
-        </svg>
-        <span>Results</span>
-    </a>
-    <a class="nav-items" href="https://kushashish.github.io/exam/index.html">
-        <svg viewBox="-42 0 512 512.002" xmlns="http://www.w3.org/2000/svg"><path d="m210.351562 246.632812c33.882813 0 63.222657-12.152343 87.195313-36.128906 23.972656-23.972656 36.125-53.304687 36.125-87.191406 0-33.875-12.152344-63.210938-36.128906-87.191406-23.976563-23.96875-53.3125-36.121094-87.191407-36.121094-33.886718 0-63.21875 12.152344-87.191406 36.125s-36.128906 53.308594-36.128906 87.1875c0 33.886719 12.15625 63.222656 36.132812 87.195312 23.976563 23.96875 53.3125 36.125 87.1875 36.125zm0 0"/><path d="m426.128906 393.703125c-.691406-9.976563-2.089844-20.859375-4.148437-32.351563-2.078125-11.578124-4.753907-22.523437-7.957031-32.527343-3.308594-10.339844-7.808594-20.550781-13.371094-30.335938-5.773438-10.15625-12.554688-19-20.164063-26.277343-7.957031-7.613282-17.699219-13.734376-28.964843-18.199219-11.226563-4.441407-23.667969-6.691407-36.976563-6.691407-5.226563 0-10.28125 2.144532-20.042969 8.5-6.007812 3.917969-13.035156 8.449219-20.878906 13.460938-6.707031 4.273438-15.792969 8.277344-27.015625 11.902344-10.949219 3.542968-22.066406 5.339844-33.039063 5.339844-10.972656 0-22.085937-1.796876-33.046874-5.339844-11.210938-3.621094-20.296876-7.625-26.996094-11.898438-7.769532-4.964844-14.800782-9.496094-20.898438-13.46875-9.75-6.355468-14.808594-8.5-20.035156-8.5-13.3125 0-25.75 2.253906-36.972656 6.699219-11.257813 4.457031-21.003906 10.578125-28.96875 18.199219-7.605469 7.28125-14.390625 16.121094-20.15625 26.273437-5.558594 9.785157-10.058594 19.992188-13.371094 30.339844-3.199219 10.003906-5.875 20.945313-7.953125 32.523437-2.058594 11.476563-3.457031 22.363282-4.148437 32.363282-.679688 9.796875-1.023438 19.964844-1.023438 30.234375 0 26.726562 8.496094 48.363281 25.25 64.320312 16.546875 15.746094 38.441406 23.734375 65.066406 23.734375h246.53125c26.625 0 48.511719-7.984375 65.0625-23.734375 16.757813-15.945312 25.253906-37.585937 25.253906-64.324219-.003906-10.316406-.351562-20.492187-1.035156-30.242187zm0 0"/></svg>
-        <span>Profile</span>
-    </a>
-</nav>
-<main class="main flex-grow-1">
-  <section class="content-card">
-      <div class="header">Create New Exam</div>
-      <div class="panel">
-          <div class="content">
-              <div class="input-group">
-                  <input placeholder="Enter The Exam Name" />
-                  <label>Assign the exam a name (shown in the Exam List)</label>
+    <div class="main-content">
+      <div class="container">
+        <div class="content-wrapper d-flex">
+          <?php 
+    $url = $_SERVER['REQUEST_URI'];
+?>
+          <div class="overlay" id="navOverlay"></div>
+          <nav class="nav">
+            <div class="user-box d-md-none">
+              <div class="user-info-box flex-start-center">
+                <div class="user-img-box">
+                  <img class="img-fluid" src="https://kushashish.github.io/exam/img/svg/profile-white.svg"
+                    alt="Kush Sharma">
+                </div>
+                <div>
+                  <div class="name">Kush Sharma</div>
+                  <div class="text">(kushsarma@gmail.com)</div>
+                  <div class="text"><strong>Class:</strong> XII</div>
+                  <div class="text"><strong>Batch:</strong> Bacth I</div>
+                </div>
               </div>
-              <div class="custom-select">
-                  <div class="custom-select-head">Select Batch</div>
-                  <div class="custom-checkbox-list">
+              <div class="profile-box d-block">
+                <a href="javascript:void(0)" class="link openModal" data-target="changePwd">Change Password</a>
+                <a href="javascript:void(0)" class="link">Help</a>
+                <a href="javascript:void(0)" class="link">Settings</a>
+                <div class="divider"></div>
+                <a href="javascript:void(0)" class="link mb-3">Sign out</a>
+              </div>
+            </div>
+            <a class="nav-items active" href="https://kushashish.github.io/exam/index.html">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <g>
+                  <g>
+                    <path d="M387.587,95.376L297.624,4.413C294.892,1.674,289.457,0,287,0H15C6.709,0,0,6.709,0,15v482c0,8.291,6.709,15,15,15h362
+                        c8.291,0,15-6.709,15-15V106C392,103.658,390.356,98.137,387.587,95.376z M175.606,356.605l-60,60
+                        c-2.93,2.93-6.768,4.395-10.605,4.395c-3.837,0-7.676-1.465-10.605-4.395l-30-30c-5.861-5.859-5.861-15.351-0.001-21.21
+                        c5.859-5.859,15.352-5.859,21.211,0L105,384.789l49.395-49.395c5.859-5.859,15.352-5.859,21.211,0
+                        S181.465,350.746,175.606,356.605z M175.606,236.605l-60,60c-2.93,2.93-6.768,4.395-10.605,4.395
+                        c-3.837,0-7.676-1.465-10.605-4.395l-30-30c-5.861-5.859-5.861-15.351-0.001-21.21c5.859-5.859,15.352-5.859,21.211,0L105,264.789
+                        l49.395-49.395c5.859-5.859,15.352-5.859,21.211,0S181.465,230.746,175.606,236.605z M175.606,116.605l-60,60
+                        c-2.93,2.93-6.768,4.395-10.605,4.395c-3.837,0-7.676-1.465-10.605-4.395l-30-30c-5.861-5.859-5.861-15.351-0.001-21.21
+                        c5.859-5.859,15.352-5.859,21.211,0L105,144.789l49.395-49.395c5.859-5.859,15.352-5.859,21.211,0
+                        S181.465,110.746,175.606,116.605z M317,421h-92c-8.291,0-15-6.709-15-15c0-8.291,6.709-15,15-15h92c8.291,0,15,6.709,15,15
+                        C332,414.291,325.291,421,317,421z M317,301h-92c-8.291,0-15-6.709-15-15c0-8.291,6.709-15,15-15h92c8.291,0,15,6.709,15,15
+                        C332,294.291,325.291,301,317,301z M317,181h-92c-8.291,0-15-6.709-15-15s6.709-15,15-15h92c8.291,0,15,6.709,15,15
+                        S325.291,181,317,181z M302,91V52.211L340.789,91H302z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M467,91c-24.814,0-45,20.186-45,45c0,26.041,0,48.959,0,75h90c0-26.041,0-48.959,0-75C512,111.186,491.814,91,467,91z
+                        M482,151h-30v-15c0-8.276,6.724-15,15-15s15,6.724,15,15V151z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M422,391v15c0,2.329,0.542,4.629,1.582,6.709l30,60c5.528,11.025,21.308,11.025,26.836,0l30-60
+                        c1.04-2.08,1.582-4.38,1.582-6.709v-15H422z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <rect x="422" y="241" width="90" height="120" />
+                  </g>
+                </g>
+              </svg>
+              <span>New Exam</span>
+            </a>
+            <a class="nav-items" href="https://kushashish.github.io/exam/exam-list.html">
+              <svg id="Layer_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
+                xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <path
+                    d="m72 144c-39.701 0-72-32.299-72-72s32.299-72 72-72 72 32.299 72 72-32.299 72-72 72zm0-112c-22.056 0-40 17.944-40 40s17.944 40 40 40 40-17.944 40-40-17.944-40-40-40z" />
+                  <path
+                    d="m72 328c-39.701 0-72-32.299-72-72s32.299-72 72-72 72 32.299 72 72-32.299 72-72 72zm0-112c-22.056 0-40 17.944-40 40s17.944 40 40 40 40-17.944 40-40-17.944-40-40-40z" />
+                  <path
+                    d="m72 512c-39.701 0-72-32.299-72-72s32.299-72 72-72 72 32.299 72 72-32.299 72-72 72zm0-112c-22.056 0-40 17.944-40 40s17.944 40 40 40 40-17.944 40-40-17.944-40-40-40z" />
+                  <path
+                    d="m440 144h-192c-39.701 0-72-32.299-72-72s32.299-72 72-72h192c39.701 0 72 32.299 72 72s-32.299 72-72 72z" />
+                  <path
+                    d="m440 328h-192c-39.701 0-72-32.299-72-72s32.299-72 72-72h192c39.701 0 72 32.299 72 72s-32.299 72-72 72z" />
+                  <path
+                    d="m440 512h-192c-39.701 0-72-32.299-72-72s32.299-72 72-72h192c39.701 0 72 32.299 72 72s-32.299 72-72 72z" />
+                </g>
+              </svg>
+              <span>Exam List</span>
+            </a>
+            <a class="nav-items" href="https://kushashish.github.io/exam/results.html">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <g>
+                  <g>
+                    <path d="M387.587,95.376L297.624,4.413C294.892,1.674,289.457,0,287,0H15C6.709,0,0,6.709,0,15v482c0,8.291,6.709,15,15,15h362
+                        c8.291,0,15-6.709,15-15V106C392,103.658,390.356,98.137,387.587,95.376z M175.606,356.605l-60,60
+                        c-2.93,2.93-6.768,4.395-10.605,4.395c-3.837,0-7.676-1.465-10.605-4.395l-30-30c-5.861-5.859-5.861-15.351-0.001-21.21
+                        c5.859-5.859,15.352-5.859,21.211,0L105,384.789l49.395-49.395c5.859-5.859,15.352-5.859,21.211,0
+                        S181.465,350.746,175.606,356.605z M175.606,236.605l-60,60c-2.93,2.93-6.768,4.395-10.605,4.395
+                        c-3.837,0-7.676-1.465-10.605-4.395l-30-30c-5.861-5.859-5.861-15.351-0.001-21.21c5.859-5.859,15.352-5.859,21.211,0L105,264.789
+                        l49.395-49.395c5.859-5.859,15.352-5.859,21.211,0S181.465,230.746,175.606,236.605z M175.606,116.605l-60,60
+                        c-2.93,2.93-6.768,4.395-10.605,4.395c-3.837,0-7.676-1.465-10.605-4.395l-30-30c-5.861-5.859-5.861-15.351-0.001-21.21
+                        c5.859-5.859,15.352-5.859,21.211,0L105,144.789l49.395-49.395c5.859-5.859,15.352-5.859,21.211,0
+                        S181.465,110.746,175.606,116.605z M317,421h-92c-8.291,0-15-6.709-15-15c0-8.291,6.709-15,15-15h92c8.291,0,15,6.709,15,15
+                        C332,414.291,325.291,421,317,421z M317,301h-92c-8.291,0-15-6.709-15-15c0-8.291,6.709-15,15-15h92c8.291,0,15,6.709,15,15
+                        C332,294.291,325.291,301,317,301z M317,181h-92c-8.291,0-15-6.709-15-15s6.709-15,15-15h92c8.291,0,15,6.709,15,15
+                        S325.291,181,317,181z M302,91V52.211L340.789,91H302z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M467,91c-24.814,0-45,20.186-45,45c0,26.041,0,48.959,0,75h90c0-26.041,0-48.959,0-75C512,111.186,491.814,91,467,91z
+                        M482,151h-30v-15c0-8.276,6.724-15,15-15s15,6.724,15,15V151z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M422,391v15c0,2.329,0.542,4.629,1.582,6.709l30,60c5.528,11.025,21.308,11.025,26.836,0l30-60
+                        c1.04-2.08,1.582-4.38,1.582-6.709v-15H422z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <rect x="422" y="241" width="90" height="120" />
+                  </g>
+                </g>
+              </svg>
+              <span>Results</span>
+            </a>
+            <a class="nav-items" href="https://kushashish.github.io/exam/index.html">
+              <svg viewBox="-42 0 512 512.002" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m210.351562 246.632812c33.882813 0 63.222657-12.152343 87.195313-36.128906 23.972656-23.972656 36.125-53.304687 36.125-87.191406 0-33.875-12.152344-63.210938-36.128906-87.191406-23.976563-23.96875-53.3125-36.121094-87.191407-36.121094-33.886718 0-63.21875 12.152344-87.191406 36.125s-36.128906 53.308594-36.128906 87.1875c0 33.886719 12.15625 63.222656 36.132812 87.195312 23.976563 23.96875 53.3125 36.125 87.1875 36.125zm0 0" />
+                <path
+                  d="m426.128906 393.703125c-.691406-9.976563-2.089844-20.859375-4.148437-32.351563-2.078125-11.578124-4.753907-22.523437-7.957031-32.527343-3.308594-10.339844-7.808594-20.550781-13.371094-30.335938-5.773438-10.15625-12.554688-19-20.164063-26.277343-7.957031-7.613282-17.699219-13.734376-28.964843-18.199219-11.226563-4.441407-23.667969-6.691407-36.976563-6.691407-5.226563 0-10.28125 2.144532-20.042969 8.5-6.007812 3.917969-13.035156 8.449219-20.878906 13.460938-6.707031 4.273438-15.792969 8.277344-27.015625 11.902344-10.949219 3.542968-22.066406 5.339844-33.039063 5.339844-10.972656 0-22.085937-1.796876-33.046874-5.339844-11.210938-3.621094-20.296876-7.625-26.996094-11.898438-7.769532-4.964844-14.800782-9.496094-20.898438-13.46875-9.75-6.355468-14.808594-8.5-20.035156-8.5-13.3125 0-25.75 2.253906-36.972656 6.699219-11.257813 4.457031-21.003906 10.578125-28.96875 18.199219-7.605469 7.28125-14.390625 16.121094-20.15625 26.273437-5.558594 9.785157-10.058594 19.992188-13.371094 30.339844-3.199219 10.003906-5.875 20.945313-7.953125 32.523437-2.058594 11.476563-3.457031 22.363282-4.148437 32.363282-.679688 9.796875-1.023438 19.964844-1.023438 30.234375 0 26.726562 8.496094 48.363281 25.25 64.320312 16.546875 15.746094 38.441406 23.734375 65.066406 23.734375h246.53125c26.625 0 48.511719-7.984375 65.0625-23.734375 16.757813-15.945312 25.253906-37.585937 25.253906-64.324219-.003906-10.316406-.351562-20.492187-1.035156-30.242187zm0 0" />
+                </svg>
+              <span>Profile</span>
+            </a>
+          </nav>
+          <main class="main flex-grow-1">
+            <section class="content-card">
+              <div class="header">Create New Exam</div>
+              <div class="panel">
+                <div class="content">
+                  <div class="input-group">
+                    <input placeholder="Enter The Exam Name" />
+                    <label>Assign the exam a name (shown in the Exam List)</label>
+                  </div>
+                  <div class="custom-select">
+                    <div class="custom-select-head">Select Batch</div>
+                    <div class="custom-checkbox-list">
                       <div class="custom-list d-flex flex-wrap-wrap">
-                          <label class="custom-checkbox">
-                              <input type="checkbox" checked>
-                              <em class="checkbox"></em>
-                              <span class="label">Batch 1</span>
-                          </label>
-                          <label class="custom-checkbox">
-                              <input type="checkbox" >
-                              <em class="checkbox"></em>
-                              <span class="label">Batch 2</span>
-                          </label>
-                          <label class="custom-checkbox">
-                              <input type="checkbox" checked>
-                              <em class="checkbox"></em>
-                              <span class="label">Batch 3</span>
-                          </label>
-                          <label class="custom-checkbox">
-                              <input type="checkbox" >
-                              <em class="checkbox"></em>
-                              <span class="label">Batch 4</span>
-                          </label>
-                          <label class="custom-checkbox">
-                              <input type="checkbox" >
-                              <em class="checkbox"></em>
-                              <span class="label">Batch 5</span>
-                          </label>
-                          <label class="custom-checkbox">
-                              <input type="checkbox" >
-                              <em class="checkbox"></em>
-                              <span class="label">Batch 6</span>
-                          </label>
+                        <label class="custom-checkbox">
+                          <input type="checkbox" checked>
+                          <em class="checkbox"></em>
+                          <span class="label">Batch 1</span>
+                        </label>
+                        <label class="custom-checkbox">
+                          <input type="checkbox">
+                          <em class="checkbox"></em>
+                          <span class="label">Batch 2</span>
+                        </label>
+                        <label class="custom-checkbox">
+                          <input type="checkbox" checked>
+                          <em class="checkbox"></em>
+                          <span class="label">Batch 3</span>
+                        </label>
+                        <label class="custom-checkbox">
+                          <input type="checkbox">
+                          <em class="checkbox"></em>
+                          <span class="label">Batch 4</span>
+                        </label>
+                        <label class="custom-checkbox">
+                          <input type="checkbox">
+                          <em class="checkbox"></em>
+                          <span class="label">Batch 5</span>
+                        </label>
+                        <label class="custom-checkbox">
+                          <input type="checkbox">
+                          <em class="checkbox"></em>
+                          <span class="label">Batch 6</span>
+                        </label>
                       </div>
+                    </div>
                   </div>
+                </div>
               </div>
-          </div>
-      </div>
-  </section>
+            </section>
 
-  <section class="content-card">
-      <div class="header">Exam Questions</div>
-      <div class="panel">
-          <div class="content">
-             <label class="check-list">
-                 <input type="radio" name="examType" />
-                 <em class="radio"></em>
-                 <div class="check-list__info">
-                     <div class="heading">No digital exam questions</div>
-                     <p class="desc">The questions are given outside of the system, e.g. orally or on a piece of paper.</p>
-                 </div>
-             </label>
+            <section class="content-card">
+              <div class="header">Exam Questions</div>
+              <div class="panel">
+                <div class="content">
+                  <label class="check-list">
+                    <input type="radio" name="examType" />
+                    <em class="radio"></em>
+                    <div class="check-list__info">
+                      <div class="heading">No digital exam questions</div>
+                      <p class="desc">The questions are given outside of the system, e.g. orally or on a piece of paper.
+                      </p>
+                    </div>
+                  </label>
 
-             <label class="check-list openModal" data-target="pdfModal">
-                 <input type="radio" name="examType" />
-                 <em class="radio"></em>
-                 <div class="check-list__info">
-                     <div class="heading">Use a PDF file</div>
-                     <p class="desc">Add or change your choice of a PDF-file. You can add additional PDF files under "Accessibility"</p>
-                 </div>
-             </label>
+                  <label class="check-list openModal" data-target="pdfModal">
+                    <input type="radio" name="examType" />
+                    <em class="radio"></em>
+                    <div class="check-list__info">
+                      <div class="heading">Use a PDF file</div>
+                      <p class="desc">Add or change your choice of a PDF-file. You can add additional PDF files under
+                        "Accessibility"</p>
+                    </div>
+                  </label>
 
-             <label class="check-list openModal" data-target="examModal">
-                 <input type="radio" name="examType" />
-                 <em class="radio"></em>
-                 <div class="check-list__info">
-                     <div class="heading">Write exam questions</div>
-                     <p class="desc">Write your questions here, or paste from Microsoft Word.</p>
-                 </div>
-             </label>
+                  <label class="check-list openModal" data-target="examModal">
+                    <input type="radio" name="examType" />
+                    <em class="radio"></em>
+                    <div class="check-list__info">
+                      <div class="heading">Write exam questions</div>
+                      <p class="desc">Write your questions here, or paste from Microsoft Word.</p>
+                    </div>
+                  </label>
 
-          <label class="check-list openModal" data-target="newExamModal">
-                 <input type="radio" name="examType" />
-                 <em class="radio"></em>
-                 <div class="check-list__info">
-                     <div class="heading">Auto-marked exams</div>
-                     <p class="desc">Create exams with different question types such as "multiple choice", "fill in the gaps", etc. You can also enable auto-marking for these exams.</p>
-                 </div>
-             </label>
-          </div>
-      </div>
-  </section>
+                  <label class="check-list openModal" data-target="newExamModal">
+                    <input type="radio" name="examType" />
+                    <em class="radio"></em>
+                    <div class="check-list__info">
+                      <div class="heading">Auto-marked exams</div>
+                      <p class="desc">Create exams with different question types such as "multiple choice", "fill in the
+                        gaps", etc. You can also enable auto-marking for these exams.</p>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </section>
 
-  <section class="content-card">
-      <div class="header">Student Information</div>
-      <div class="panel">
-          <div class="content">
-              <section class="section">
-                  <div class="sub-heading">Student Information</div>
-                  <p class="sub-heading-desc">Tick what information the students have to provide before starting the exam.</p>
-                  <div class="check-list-items">
+            <section class="content-card">
+              <div class="header">Student Information</div>
+              <div class="panel">
+                <div class="content">
+                  <section class="section">
+                    <div class="sub-heading">Student Information</div>
+                    <p class="sub-heading-desc">Tick what information the students have to provide before starting the
+                      exam.</p>
+                    <div class="check-list-items">
                       <label class="custom-checkbox">
-                          <input type="checkbox" checked>
-                          <em class="checkbox"></em>
-                          <span class="label">First Name</span>
+                        <input type="checkbox" checked>
+                        <em class="checkbox"></em>
+                        <span class="label">First Name</span>
                       </label>
                       <label class="custom-checkbox">
-                          <input type="checkbox" checked>
-                          <em class="checkbox"></em>
-                          <span class="label">Last Name</span>
+                        <input type="checkbox" checked>
+                        <em class="checkbox"></em>
+                        <span class="label">Last Name</span>
                       </label>
                       <label class="custom-checkbox">
-                          <input type="checkbox">
-                          <em class="checkbox"></em>
-                          <span class="label">Email</span>
+                        <input type="checkbox">
+                        <em class="checkbox"></em>
+                        <span class="label">Email</span>
                       </label>
                       <label class="custom-checkbox">
-                          <input type="checkbox" checked>
-                          <em class="checkbox"></em>
-                          <span class="label">Class</span>
+                        <input type="checkbox" checked>
+                        <em class="checkbox"></em>
+                        <span class="label">Class</span>
                       </label>
                       <label class="custom-checkbox">
-                          <input type="checkbox">
-                          <em class="checkbox"></em>
-                          <span class="label">Teacher Name</span>
+                        <input type="checkbox">
+                        <em class="checkbox"></em>
+                        <span class="label">Teacher Name</span>
                       </label>
                       <label class="custom-checkbox">
-                          <input type="checkbox">
-                          <em class="checkbox"></em>
-                          <span class="label">Phone Number</span>
+                        <input type="checkbox">
+                        <em class="checkbox"></em>
+                        <span class="label">Phone Number</span>
                       </label>
                       <label class="custom-checkbox">
-                          <input type="checkbox">
-                          <em class="checkbox"></em>
-                          <span class="label">Student Id</span>
+                        <input type="checkbox">
+                        <em class="checkbox"></em>
+                        <span class="label">Student Id</span>
                       </label>
 
-                  </div>
-              </section>
-              <section class="section">
-                  <div class="sub-heading">Anonymize exam</div>
-                  <p class="sub-heading-desc">Students' identities are replaced by unique codes, and you may reveal the identities after grading the exams.</p>
-                  <div class="toggle-btn">
+                    </div>
+                  </section>
+                  <section class="section">
+                    <div class="sub-heading">Anonymize exam</div>
+                    <p class="sub-heading-desc">Students' identities are replaced by unique codes, and you may reveal
+                      the identities after grading the exams.</p>
+                    <div class="toggle-btn">
                       <label class="switch">
-                          <input type="checkbox">
-                          <span class="slider"></span>
+                        <input type="checkbox">
+                        <span class="slider"></span>
                       </label>
                       <div class="text">How does this work?</div>
-                  </div>
-              </section>
-          </div>
-      </div>
-  </section>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </section>
 
-  <section class="content-card">
-      <div class="header">Student Workspace</div>
-      <div class="panel">
-          <div class="content">
-              <section class="section">
-                  <div class="sub-heading">Writing area</div>
-                  <div class="toggle-btn">
+            <section class="content-card">
+              <div class="header">Student Workspace</div>
+              <div class="panel">
+                <div class="content">
+                  <section class="section">
+                    <div class="sub-heading">Writing area</div>
+                    <div class="toggle-btn">
                       <label class="switch">
-                          <input type="checkbox">
-                          <span class="slider"></span>
+                        <input type="checkbox">
+                        <span class="slider"></span>
                       </label>
                       <div class="text">The student is given an area to write answers in.</div>
-                  </div>
-              </section>
-              <section class="section sub-section">
-                  <div class="sub-heading"><strong>Accessibility tools</strong></div>
-                  <div class="sub-heading">Allow translation help</div>
-                  <div class="toggle-btn">
+                    </div>
+                  </section>
+                  <section class="section sub-section">
+                    <div class="sub-heading"><strong>Accessibility tools</strong></div>
+                    <div class="sub-heading">Allow translation help</div>
+                    <div class="toggle-btn">
                       <label class="switch">
-                          <input type="checkbox">
-                          <span class="slider"></span>
+                        <input type="checkbox">
+                        <span class="slider"></span>
                       </label>
-                      <div class="text">Gives the student access to translation help for sentences or single words, in many languages.</div>
-                  </div>
-              </section>
-              <section class="section sub-section">
-                  <div class="sub-heading">English synonyms</div>
-                  <div class="toggle-btn">
+                      <div class="text">Gives the student access to translation help for sentences or single words, in
+                        many languages.</div>
+                    </div>
+                  </section>
+                  <section class="section sub-section">
+                    <div class="sub-heading">English synonyms</div>
+                    <div class="toggle-btn">
                       <label class="switch">
-                          <input type="checkbox" checked>
-                          <span class="slider"></span>
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
                       </label>
                       <div class="text">Enables the student to get synonyms for English words.</div>
-                  </div>
-              </section>
-          </div>
-      </div>
-  </section>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </section>
 
-  <section class="content-card">
-      <div class="header">Security</div>
-      <div class="panel">
-          <div class="content">
-             <label class="check-list">
-                 <input type="radio" name="securityType" checked />
-                 <em class="radio"></em>
-                 <div class="check-list__info">
-                     <div class="heading">Require high-security mode</div>
-                     <p class="desc">Exam.net-applications (iOS and macOS), SEB (Windows), TaT (Windows 10) or the Chromebook-app. <br /> The high-security mode is recommended as soon as the necessary software is installed.</p>
-                 </div>
-             </label>
+            <section class="content-card">
+              <div class="header">Security</div>
+              <div class="panel">
+                <div class="content">
+                  <label class="check-list">
+                    <input type="radio" name="securityType" checked />
+                    <em class="radio"></em>
+                    <div class="check-list__info">
+                      <div class="heading">Require high-security mode</div>
+                      <p class="desc">Exam.net-applications (iOS and macOS), SEB (Windows), TaT (Windows 10) or the
+                        Chromebook-app. <br /> The high-security mode is recommended as soon as the necessary software
+                        is installed.</p>
+                    </div>
+                  </label>
 
-             <label class="check-list">
-                 <input type="radio" name="securityType" />
-                 <em class="radio"></em>
-                 <div class="check-list__info">
-                     <div class="heading">Allow any browser but prefer high-security mode</div>
-                     <p class="desc">High-security mode will be suggested, but the student may also start the exam in any browser. You can see when monitoring the exam if the student is using the high-security mode.</p>
-                 </div>
-             </label>
+                  <label class="check-list">
+                    <input type="radio" name="securityType" />
+                    <em class="radio"></em>
+                    <div class="check-list__info">
+                      <div class="heading">Allow any browser but prefer high-security mode</div>
+                      <p class="desc">High-security mode will be suggested, but the student may also start the exam in
+                        any browser. You can see when monitoring the exam if the student is using the high-security
+                        mode.</p>
+                    </div>
+                  </label>
 
-             <label class="check-list">
-                 <input type="radio" name="securityType" />
-                 <em class="radio"></em>
-                 <div class="check-list__info">
-                     <div class="heading">Allow any browser</div>
-                     <p class="desc">The exam will open in any browser</p>
-                 </div>
-             </label>
-             
-          </div>
-      </div>
-  </section>
+                  <label class="check-list">
+                    <input type="radio" name="securityType" />
+                    <em class="radio"></em>
+                    <div class="check-list__info">
+                      <div class="heading">Allow any browser</div>
+                      <p class="desc">The exam will open in any browser</p>
+                    </div>
+                  </label>
 
-  <div class="action-box text-center">
-      <button class="btn">Create the exam</button>
-  </div>
-</main>
-          </div>
+                </div>
+              </div>
+            </section>
+
+            <div class="action-box text-center">
+              <button class="btn">Create the exam</button>
+            </div>
+          </main>
         </div>
       </div>
-
     </div>
 
-    <div class="modal" id="newExamModal">
-      <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-              <div class="modal-header flex-between-center">
-                  <div class="modal-title">New Exam</div>
-                  <button class="btn-close" data-dismiss="modal">
-                      <img src="https://kushashish.github.io/exam/img/svg/cancel.svg" alt="close btn">
-                  </button>
+  </div>
+
+  <div class="modal" id="newExamModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header flex-between-center">
+          <div class="modal-title">New Exam</div>
+          <button class="btn-close" data-dismiss="modal">
+            <img src="https://kushashish.github.io/exam/img/svg/cancel.svg" alt="close btn">
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="new-exam-wrapper">
+            <div class="step-1 active">
+              <p>Select question type to add.</p>
+              <div class="pl-md-30 d-flex justify-content-around justify-content-md-start" id="queType">
+                <button class="btn btn-secondary">Multiple Choice</button>
+                <button class="btn btn-secondary ml-15 ml-md-25 ">Free Text</button>
               </div>
-              <div class="modal-body">
-                  <div class="new-exam-wrapper">
-                      <div class="step-1 active">
-                          <p>Select question type to add.</p>
-                          <div class="pl-md-30 d-flex justify-content-around justify-content-md-start" id="queType">
-                              <button class="btn btn-secondary">Multiple Choice</button>
-                              <button class="btn btn-secondary ml-15 ml-md-25 ">Free Text</button>
-                          </div>
-                      </div>
-                      <div class="step-2">
-                          <section class="editor-section que-editor">
-                              <div class="title">Enter Question</div>
-                              <textarea name="editor1"></textarea>
-                          </section>
-                          <section class="editor-section ans-editor">
-                              <div class="title">Answer Options</div>
-                              <textarea name="editor2"></textarea>
-                          </section>
-                          <div class="mb-15">
-                              <button class="btn btn-small">Add answer</button>
-                          </div>
-                          <div class="shuffle-box flex-start-center">
-                              <div class="suffle-switch flex-start-center" id="suffleBox">
-                                  <div class="box first active">
-                                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="96.865px" viewBox="0 1.567 100 96.865" enable-background="new 0 1.567 100 96.865" xml:space="preserve">
-                                          <path d="M5.515,54.691C5.571,54.677,5.454,54.691,5.515,54.691L5.515,54.691z"/>
-                                          <path d="M5.515,70.312C5.428,70.312,5.593,70.338,5.515,70.312L5.515,70.312z"/>
-                                          <path d="M98.402,71.596L79.986,53.293c-2.131-2.117-5.598-2.117-7.729,0l-3.275,3.256c-1.03,1.023-1.597,2.389-1.597,3.846
+            </div>
+            <div class="step-2">
+              <section class="editor-section que-editor">
+                <div class="title">Enter Question</div>
+                <textarea name="editor1"></textarea>
+              </section>
+              <section class="editor-section ans-editor">
+                <div class="title">Answer Options</div>
+                <textarea name="editor2"></textarea>
+              </section>
+              <div class="mb-15">
+                <button class="btn btn-small">Add answer</button>
+              </div>
+              <div class="shuffle-box flex-start-center">
+                <div class="suffle-switch flex-start-center" id="suffleBox">
+                  <div class="box first active">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="96.865px"
+                      viewBox="0 1.567 100 96.865" enable-background="new 0 1.567 100 96.865" xml:space="preserve">
+                      <path d="M5.515,54.691C5.571,54.677,5.454,54.691,5.515,54.691L5.515,54.691z" />
+                      <path d="M5.515,70.312C5.428,70.312,5.593,70.338,5.515,70.312L5.515,70.312z" />
+                      <path d="M98.402,71.596L79.986,53.293c-2.131-2.117-5.598-2.117-7.729,0l-3.275,3.256c-1.03,1.023-1.597,2.389-1.597,3.846
                                               c0,1.458,0.566,2.629,1.597,3.652l3.357,3.141H61.605L44.032,49.616l17.573-17.572H72.34l-3.357,3.531
                                               c-1.03,1.022-1.597,2.485-1.597,3.942c0,1.458,0.566,2.873,1.597,3.897l3.275,3.28c1.029,1.022,2.4,1.597,3.865,1.597
                                               c1.463,0,2.833-0.557,3.863-1.58l18.416-18.299c1.033-1.026,1.6-2.397,1.597-3.857c0.003-1.463-0.563-2.834-1.597-3.861
@@ -411,13 +489,15 @@
                                               c2.087,0,4.048-0.621,5.522-2.096l7.36-7.264L52.85,80.667c1.475,1.475,3.436,2.14,5.521,2.14h14.105l-2.727,2.906
                                               c-1.029,1.021-1.597,2.486-1.597,3.943s0.565,2.871,1.597,3.896l3.274,3.278c1.067,1.06,2.466,1.602,3.864,1.602
                                               c1.399,0,2.799-0.524,3.864-1.582l17.649-17.536c1.033-1.027,1.602-2.398,1.598-3.857
-                                              C100.004,73.992,99.436,72.622,98.402,71.596z"/>
-                                          <path d="M5.515,44.539C5.452,44.539,5.572,44.553,5.515,44.539L5.515,44.539z"/>
-                                      </svg>
-                                  </div>
-                                  <div class="box second">
-                                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="90.821px" viewBox="0 4.589 100 90.821" enable-background="new 0 4.589 100 90.821" xml:space="preserve">
-                                          <path d="M14.083,80.301l-0.019,0.085h58.341l-2.671,2.563c-1.029,1.024-1.598,2.346-1.598,3.805c0,1.457,0.568,2.801,1.598,3.824
+                                              C100.004,73.992,99.436,72.622,98.402,71.596z" />
+                      <path d="M5.515,44.539C5.452,44.539,5.572,44.553,5.515,44.539L5.515,44.539z" />
+                    </svg>
+                  </div>
+                  <div class="box second">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px" y="0px" width="100px" height="90.821px" viewBox="0 4.589 100 90.821"
+                      enable-background="new 0 4.589 100 90.821" xml:space="preserve">
+                      <path d="M14.083,80.301l-0.019,0.085h58.341l-2.671,2.563c-1.029,1.024-1.598,2.346-1.598,3.805c0,1.457,0.568,2.801,1.598,3.824
                                               l3.277,3.245c2.132,2.119,5.6,2.114,7.732-0.005l17.659-17.551c1.033-1.029,1.601-2.402,1.597-3.862
                                               c0.004-1.465-0.563-2.837-1.597-3.865L79.977,50.227c-2.133-2.118-5.601-2.118-7.732,0l-3.277,3.257
                                               c-1.031,1.023-1.598,2.391-1.598,3.848c0,1.459,0.568,2.916,1.598,3.94l3.416,3.485H15.627v-22.66h10.599l-2.671,2.558
@@ -425,20 +505,23 @@
                                               l17.659-17.555c1.033-1.027,1.601-2.4,1.596-3.86c0.005-1.466-0.563-2.839-1.596-3.865L33.797,11.928
                                               c-2.131-2.119-5.601-2.119-7.731,0l-3.278,3.257c-1.029,1.025-1.598,2.392-1.598,3.851c0,1.457,0.568,2.919,1.598,3.943
                                               l3.416,3.49H15.627V9.866c0-0.03,0.018,0.037,0.015,0.008c-0.048-2.976-2.464-5.284-5.45-5.284H5.507C2.491,4.59,0,6.851,0,9.866
-                                              V27.84v38.299C0,73.895,6.328,80.301,14.083,80.301z"/>
-                                      </svg>
-                                  </div>
-                              </div>
-                              <span>Shuffle answer options</span>
-                          </div>
-                          <ul class="option-list">
-                              <li class="option">
-                                  <div class="option-content">
-                                      <span class="option-text">Lorem ipsum dolor sit amet</span>
-                                      <div class="option-edit-box">
-                                          <button class="btn-edit">
-                                              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.867 477.867" style="enable-background:new 0 0 477.867 477.867;" xml:space="preserve">
-                                                  <path d="M443.733,68.267H324.267V51.2c0-28.277-22.923-51.2-51.2-51.2H204.8c-28.277,0-51.2,22.923-51.2,51.2v17.067H34.133
+                                              V27.84v38.299C0,73.895,6.328,80.301,14.083,80.301z" />
+                    </svg>
+                  </div>
+                </div>
+                <span>Shuffle answer options</span>
+              </div>
+              <ul class="option-list">
+                <li class="option">
+                  <div class="option-content">
+                    <span class="option-text">Lorem ipsum dolor sit amet</span>
+                    <div class="option-edit-box">
+                      <button class="btn-edit">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px" y="0px" viewBox="0 0 477.867 477.867"
+                          style="enable-background:new 0 0 477.867 477.867;" xml:space="preserve">
+                          <path
+                            d="M443.733,68.267H324.267V51.2c0-28.277-22.923-51.2-51.2-51.2H204.8c-28.277,0-51.2,22.923-51.2,51.2v17.067H34.133
                                                       c-9.426,0-17.067,7.641-17.067,17.067S24.708,102.4,34.133,102.4h18.551l32.649,359.953c0.805,8.814,8.216,15.55,17.067,15.514
                                                       h273.067c8.851,0.037,16.261-6.699,17.067-15.514L425.182,102.4h18.552c9.426,0,17.067-7.641,17.067-17.067
                                                       S453.159,68.267,443.733,68.267z M187.733,51.2c0-9.426,7.641-17.067,17.067-17.067h68.267c9.426,0,17.067,7.641,17.067,17.067
@@ -447,58 +530,69 @@
                                                       C188.425,400.722,181.365,408.903,171.964,409.594z M256,392.533c0,9.426-7.641,17.067-17.067,17.067s-17.067-7.641-17.067-17.067
                                                       V153.6c0-9.426,7.641-17.067,17.067-17.067S256,144.174,256,153.6V392.533z M341.333,154.812l-17.067,238.933
                                                       c-0.637,8.949-8.095,15.878-17.067,15.855h-1.229c-9.403-0.653-16.496-8.805-15.843-18.208c0.002-0.023,0.003-0.047,0.005-0.07
-                                                      L307.2,152.388c0.669-9.426,8.853-16.524,18.278-15.855C334.904,137.203,342.003,145.386,341.333,154.812z"/>
-                                              </svg>
-                                          </button>
-  
-                                          <button class="btn-edit">
-                                              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.873 477.873" style="enable-background:new 0 0 477.873 477.873;" xml:space="preserve">
-                                                  <path d="M392.533,238.937c-9.426,0-17.067,7.641-17.067,17.067V426.67c0,9.426-7.641,17.067-17.067,17.067H51.2
+                                                      L307.2,152.388c0.669-9.426,8.853-16.524,18.278-15.855C334.904,137.203,342.003,145.386,341.333,154.812z" />
+                        </svg>
+                      </button>
+
+                      <button class="btn-edit">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px" y="0px" viewBox="0 0 477.873 477.873"
+                          style="enable-background:new 0 0 477.873 477.873;" xml:space="preserve">
+                          <path
+                            d="M392.533,238.937c-9.426,0-17.067,7.641-17.067,17.067V426.67c0,9.426-7.641,17.067-17.067,17.067H51.2
                                                       c-9.426,0-17.067-7.641-17.067-17.067V85.337c0-9.426,7.641-17.067,17.067-17.067H256c9.426,0,17.067-7.641,17.067-17.067
                                                       S265.426,34.137,256,34.137H51.2C22.923,34.137,0,57.06,0,85.337V426.67c0,28.277,22.923,51.2,51.2,51.2h307.2
-                                                      c28.277,0,51.2-22.923,51.2-51.2V256.003C409.6,246.578,401.959,238.937,392.533,238.937z"/>
-                                                  <path d="M458.742,19.142c-12.254-12.256-28.875-19.14-46.206-19.138c-17.341-0.05-33.979,6.846-46.199,19.149L141.534,243.937
+                                                      c28.277,0,51.2-22.923,51.2-51.2V256.003C409.6,246.578,401.959,238.937,392.533,238.937z" />
+                          <path d="M458.742,19.142c-12.254-12.256-28.875-19.14-46.206-19.138c-17.341-0.05-33.979,6.846-46.199,19.149L141.534,243.937
                                                       c-1.865,1.879-3.272,4.163-4.113,6.673l-34.133,102.4c-2.979,8.943,1.856,18.607,10.799,21.585
                                                       c1.735,0.578,3.552,0.873,5.38,0.875c1.832-0.003,3.653-0.297,5.393-0.87l102.4-34.133c2.515-0.84,4.8-2.254,6.673-4.13
-                                                      l224.802-224.802C484.25,86.023,484.253,44.657,458.742,19.142z"/>
-                                              </svg>
-                                          </button>
-  
-                                          <button class="btn-edit">
-                                              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
-                                                  <path d="M442.668,268.536l-16.116-16.12c-5.06-5.068-11.824-7.872-19.024-7.872c-7.208,0-14.584,2.804-19.644,7.872
+                                                      l224.802-224.802C484.25,86.023,484.253,44.657,458.742,19.142z" />
+                        </svg>
+                      </button>
+
+                      <button class="btn-edit">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px" y="0px" viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;"
+                          xml:space="preserve">
+                          <path
+                            d="M442.668,268.536l-16.116-16.12c-5.06-5.068-11.824-7.872-19.024-7.872c-7.208,0-14.584,2.804-19.644,7.872
                                                       L283.688,355.992V26.924C283.688,12.084,272.856,0,258.02,0h-22.804c-14.832,0-28.404,12.084-28.404,26.924v330.24
                                                       L102.824,252.416c-5.068-5.068-11.444-7.872-18.652-7.872c-7.2,0-13.776,2.804-18.84,7.872l-16.028,16.12
                                                       c-10.488,10.492-10.444,27.56,0.044,38.052l177.576,177.556c5.056,5.056,11.84,7.856,19.1,7.856h0.076
-                                                      c7.204,0,13.972-2.8,19.028-7.856l177.54-177.552C453.164,296.104,453.164,279.028,442.668,268.536z"/>
-                                              </svg>
-                                          </button>
-  
-                                          <button class="btn-edit">
-                                              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
-                                                  <path d="M442.627,185.388L265.083,7.844C260.019,2.78,253.263,0,245.915,0c-7.204,0-13.956,2.78-19.02,7.844L49.347,185.388
+                                                      c7.204,0,13.972-2.8,19.028-7.856l177.54-177.552C453.164,296.104,453.164,279.028,442.668,268.536z" />
+                        </svg>
+                      </button>
+
+                      <button class="btn-edit">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px" y="0px" viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;"
+                          xml:space="preserve">
+                          <path
+                            d="M442.627,185.388L265.083,7.844C260.019,2.78,253.263,0,245.915,0c-7.204,0-13.956,2.78-19.02,7.844L49.347,185.388
                                                       c-10.488,10.492-10.488,27.568,0,38.052l16.12,16.128c5.064,5.06,11.82,7.844,19.028,7.844c7.204,0,14.192-2.784,19.252-7.844
                                                       l103.808-103.584v329.084c0,14.832,11.616,26.932,26.448,26.932h22.8c14.832,0,27.624-12.1,27.624-26.932V134.816l104.396,104.752
-                                                      c5.06,5.06,11.636,7.844,18.844,7.844s13.864-2.784,18.932-7.844l16.072-16.128C453.163,212.952,453.123,195.88,442.627,185.388z"
-                                                      />
-                                              </svg>
-                                          </button>
-                                      </div>
-                                  </div>
-                                  <div class="toggle-btn">
-                                      <label class="switch">
-                                          <input type="checkbox">
-                                          <span class="slider"></span>
-                                      </label>
-                                  </div>
-                              </li>
-                              <li class="option">
-                                  <div class="option-content">
-                                      <span class="option-text">This is what iknow</span>
-                                      <div class="option-edit-box">
-                                          <button class="btn-edit">
-                                              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.867 477.867" style="enable-background:new 0 0 477.867 477.867;" xml:space="preserve">
-                                                  <path d="M443.733,68.267H324.267V51.2c0-28.277-22.923-51.2-51.2-51.2H204.8c-28.277,0-51.2,22.923-51.2,51.2v17.067H34.133
+                                                      c5.06,5.06,11.636,7.844,18.844,7.844s13.864-2.784,18.932-7.844l16.072-16.128C453.163,212.952,453.123,195.88,442.627,185.388z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="toggle-btn">
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                </li>
+                <li class="option">
+                  <div class="option-content">
+                    <span class="option-text">This is what iknow</span>
+                    <div class="option-edit-box">
+                      <button class="btn-edit">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px" y="0px" viewBox="0 0 477.867 477.867"
+                          style="enable-background:new 0 0 477.867 477.867;" xml:space="preserve">
+                          <path
+                            d="M443.733,68.267H324.267V51.2c0-28.277-22.923-51.2-51.2-51.2H204.8c-28.277,0-51.2,22.923-51.2,51.2v17.067H34.133
                                                       c-9.426,0-17.067,7.641-17.067,17.067S24.708,102.4,34.133,102.4h18.551l32.649,359.953c0.805,8.814,8.216,15.55,17.067,15.514
                                                       h273.067c8.851,0.037,16.261-6.699,17.067-15.514L425.182,102.4h18.552c9.426,0,17.067-7.641,17.067-17.067
                                                       S453.159,68.267,443.733,68.267z M187.733,51.2c0-9.426,7.641-17.067,17.067-17.067h68.267c9.426,0,17.067,7.641,17.067,17.067
@@ -507,58 +601,69 @@
                                                       C188.425,400.722,181.365,408.903,171.964,409.594z M256,392.533c0,9.426-7.641,17.067-17.067,17.067s-17.067-7.641-17.067-17.067
                                                       V153.6c0-9.426,7.641-17.067,17.067-17.067S256,144.174,256,153.6V392.533z M341.333,154.812l-17.067,238.933
                                                       c-0.637,8.949-8.095,15.878-17.067,15.855h-1.229c-9.403-0.653-16.496-8.805-15.843-18.208c0.002-0.023,0.003-0.047,0.005-0.07
-                                                      L307.2,152.388c0.669-9.426,8.853-16.524,18.278-15.855C334.904,137.203,342.003,145.386,341.333,154.812z"/>
-                                              </svg>
-                                          </button>
-  
-                                          <button class="btn-edit">
-                                              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.873 477.873" style="enable-background:new 0 0 477.873 477.873;" xml:space="preserve">
-                                                  <path d="M392.533,238.937c-9.426,0-17.067,7.641-17.067,17.067V426.67c0,9.426-7.641,17.067-17.067,17.067H51.2
+                                                      L307.2,152.388c0.669-9.426,8.853-16.524,18.278-15.855C334.904,137.203,342.003,145.386,341.333,154.812z" />
+                        </svg>
+                      </button>
+
+                      <button class="btn-edit">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px" y="0px" viewBox="0 0 477.873 477.873"
+                          style="enable-background:new 0 0 477.873 477.873;" xml:space="preserve">
+                          <path
+                            d="M392.533,238.937c-9.426,0-17.067,7.641-17.067,17.067V426.67c0,9.426-7.641,17.067-17.067,17.067H51.2
                                                       c-9.426,0-17.067-7.641-17.067-17.067V85.337c0-9.426,7.641-17.067,17.067-17.067H256c9.426,0,17.067-7.641,17.067-17.067
                                                       S265.426,34.137,256,34.137H51.2C22.923,34.137,0,57.06,0,85.337V426.67c0,28.277,22.923,51.2,51.2,51.2h307.2
-                                                      c28.277,0,51.2-22.923,51.2-51.2V256.003C409.6,246.578,401.959,238.937,392.533,238.937z"/>
-                                                  <path d="M458.742,19.142c-12.254-12.256-28.875-19.14-46.206-19.138c-17.341-0.05-33.979,6.846-46.199,19.149L141.534,243.937
+                                                      c28.277,0,51.2-22.923,51.2-51.2V256.003C409.6,246.578,401.959,238.937,392.533,238.937z" />
+                          <path d="M458.742,19.142c-12.254-12.256-28.875-19.14-46.206-19.138c-17.341-0.05-33.979,6.846-46.199,19.149L141.534,243.937
                                                       c-1.865,1.879-3.272,4.163-4.113,6.673l-34.133,102.4c-2.979,8.943,1.856,18.607,10.799,21.585
                                                       c1.735,0.578,3.552,0.873,5.38,0.875c1.832-0.003,3.653-0.297,5.393-0.87l102.4-34.133c2.515-0.84,4.8-2.254,6.673-4.13
-                                                      l224.802-224.802C484.25,86.023,484.253,44.657,458.742,19.142z"/>
-                                              </svg>
-                                          </button>
-  
-                                          <button class="btn-edit">
-                                              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
-                                                  <path d="M442.668,268.536l-16.116-16.12c-5.06-5.068-11.824-7.872-19.024-7.872c-7.208,0-14.584,2.804-19.644,7.872
+                                                      l224.802-224.802C484.25,86.023,484.253,44.657,458.742,19.142z" />
+                        </svg>
+                      </button>
+
+                      <button class="btn-edit">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px" y="0px" viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;"
+                          xml:space="preserve">
+                          <path
+                            d="M442.668,268.536l-16.116-16.12c-5.06-5.068-11.824-7.872-19.024-7.872c-7.208,0-14.584,2.804-19.644,7.872
                                                       L283.688,355.992V26.924C283.688,12.084,272.856,0,258.02,0h-22.804c-14.832,0-28.404,12.084-28.404,26.924v330.24
                                                       L102.824,252.416c-5.068-5.068-11.444-7.872-18.652-7.872c-7.2,0-13.776,2.804-18.84,7.872l-16.028,16.12
                                                       c-10.488,10.492-10.444,27.56,0.044,38.052l177.576,177.556c5.056,5.056,11.84,7.856,19.1,7.856h0.076
-                                                      c7.204,0,13.972-2.8,19.028-7.856l177.54-177.552C453.164,296.104,453.164,279.028,442.668,268.536z"/>
-                                              </svg>
-                                          </button>
-  
-                                          <button class="btn-edit">
-                                              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
-                                                  <path d="M442.627,185.388L265.083,7.844C260.019,2.78,253.263,0,245.915,0c-7.204,0-13.956,2.78-19.02,7.844L49.347,185.388
+                                                      c7.204,0,13.972-2.8,19.028-7.856l177.54-177.552C453.164,296.104,453.164,279.028,442.668,268.536z" />
+                        </svg>
+                      </button>
+
+                      <button class="btn-edit">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px" y="0px" viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;"
+                          xml:space="preserve">
+                          <path
+                            d="M442.627,185.388L265.083,7.844C260.019,2.78,253.263,0,245.915,0c-7.204,0-13.956,2.78-19.02,7.844L49.347,185.388
                                                       c-10.488,10.492-10.488,27.568,0,38.052l16.12,16.128c5.064,5.06,11.82,7.844,19.028,7.844c7.204,0,14.192-2.784,19.252-7.844
                                                       l103.808-103.584v329.084c0,14.832,11.616,26.932,26.448,26.932h22.8c14.832,0,27.624-12.1,27.624-26.932V134.816l104.396,104.752
-                                                      c5.06,5.06,11.636,7.844,18.844,7.844s13.864-2.784,18.932-7.844l16.072-16.128C453.163,212.952,453.123,195.88,442.627,185.388z"
-                                                      />
-                                              </svg>
-                                          </button>
-                                      </div>
-                                  </div>
-                                  <div class="toggle-btn">
-                                      <label class="switch">
-                                          <input type="checkbox">
-                                          <span class="slider"></span>
-                                      </label>
-                                  </div>
-                              </li>
-                              <li class="option">
-                                  <div class="option-content">
-                                      <span class="option-text">Lorem ipsum dolor sit amet</span>
-                                      <div class="option-edit-box">
-                                          <button class="btn-edit">
-                                              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.867 477.867" style="enable-background:new 0 0 477.867 477.867;" xml:space="preserve">
-                                                  <path d="M443.733,68.267H324.267V51.2c0-28.277-22.923-51.2-51.2-51.2H204.8c-28.277,0-51.2,22.923-51.2,51.2v17.067H34.133
+                                                      c5.06,5.06,11.636,7.844,18.844,7.844s13.864-2.784,18.932-7.844l16.072-16.128C453.163,212.952,453.123,195.88,442.627,185.388z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="toggle-btn">
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                </li>
+                <li class="option">
+                  <div class="option-content">
+                    <span class="option-text">Lorem ipsum dolor sit amet</span>
+                    <div class="option-edit-box">
+                      <button class="btn-edit">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px" y="0px" viewBox="0 0 477.867 477.867"
+                          style="enable-background:new 0 0 477.867 477.867;" xml:space="preserve">
+                          <path
+                            d="M443.733,68.267H324.267V51.2c0-28.277-22.923-51.2-51.2-51.2H204.8c-28.277,0-51.2,22.923-51.2,51.2v17.067H34.133
                                                       c-9.426,0-17.067,7.641-17.067,17.067S24.708,102.4,34.133,102.4h18.551l32.649,359.953c0.805,8.814,8.216,15.55,17.067,15.514
                                                       h273.067c8.851,0.037,16.261-6.699,17.067-15.514L425.182,102.4h18.552c9.426,0,17.067-7.641,17.067-17.067
                                                       S453.159,68.267,443.733,68.267z M187.733,51.2c0-9.426,7.641-17.067,17.067-17.067h68.267c9.426,0,17.067,7.641,17.067,17.067
@@ -567,82 +672,93 @@
                                                       C188.425,400.722,181.365,408.903,171.964,409.594z M256,392.533c0,9.426-7.641,17.067-17.067,17.067s-17.067-7.641-17.067-17.067
                                                       V153.6c0-9.426,7.641-17.067,17.067-17.067S256,144.174,256,153.6V392.533z M341.333,154.812l-17.067,238.933
                                                       c-0.637,8.949-8.095,15.878-17.067,15.855h-1.229c-9.403-0.653-16.496-8.805-15.843-18.208c0.002-0.023,0.003-0.047,0.005-0.07
-                                                      L307.2,152.388c0.669-9.426,8.853-16.524,18.278-15.855C334.904,137.203,342.003,145.386,341.333,154.812z"/>
-                                              </svg>
-                                          </button>
-  
-                                          <button class="btn-edit">
-                                              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.873 477.873" style="enable-background:new 0 0 477.873 477.873;" xml:space="preserve">
-                                                  <path d="M392.533,238.937c-9.426,0-17.067,7.641-17.067,17.067V426.67c0,9.426-7.641,17.067-17.067,17.067H51.2
+                                                      L307.2,152.388c0.669-9.426,8.853-16.524,18.278-15.855C334.904,137.203,342.003,145.386,341.333,154.812z" />
+                        </svg>
+                      </button>
+
+                      <button class="btn-edit">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px" y="0px" viewBox="0 0 477.873 477.873"
+                          style="enable-background:new 0 0 477.873 477.873;" xml:space="preserve">
+                          <path
+                            d="M392.533,238.937c-9.426,0-17.067,7.641-17.067,17.067V426.67c0,9.426-7.641,17.067-17.067,17.067H51.2
                                                       c-9.426,0-17.067-7.641-17.067-17.067V85.337c0-9.426,7.641-17.067,17.067-17.067H256c9.426,0,17.067-7.641,17.067-17.067
                                                       S265.426,34.137,256,34.137H51.2C22.923,34.137,0,57.06,0,85.337V426.67c0,28.277,22.923,51.2,51.2,51.2h307.2
-                                                      c28.277,0,51.2-22.923,51.2-51.2V256.003C409.6,246.578,401.959,238.937,392.533,238.937z"/>
-                                                  <path d="M458.742,19.142c-12.254-12.256-28.875-19.14-46.206-19.138c-17.341-0.05-33.979,6.846-46.199,19.149L141.534,243.937
+                                                      c28.277,0,51.2-22.923,51.2-51.2V256.003C409.6,246.578,401.959,238.937,392.533,238.937z" />
+                          <path d="M458.742,19.142c-12.254-12.256-28.875-19.14-46.206-19.138c-17.341-0.05-33.979,6.846-46.199,19.149L141.534,243.937
                                                       c-1.865,1.879-3.272,4.163-4.113,6.673l-34.133,102.4c-2.979,8.943,1.856,18.607,10.799,21.585
                                                       c1.735,0.578,3.552,0.873,5.38,0.875c1.832-0.003,3.653-0.297,5.393-0.87l102.4-34.133c2.515-0.84,4.8-2.254,6.673-4.13
-                                                      l224.802-224.802C484.25,86.023,484.253,44.657,458.742,19.142z"/>
-                                              </svg>
-                                          </button>
-  
-                                          <button class="btn-edit">
-                                              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
-                                                  <path d="M442.668,268.536l-16.116-16.12c-5.06-5.068-11.824-7.872-19.024-7.872c-7.208,0-14.584,2.804-19.644,7.872
+                                                      l224.802-224.802C484.25,86.023,484.253,44.657,458.742,19.142z" />
+                        </svg>
+                      </button>
+
+                      <button class="btn-edit">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px" y="0px" viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;"
+                          xml:space="preserve">
+                          <path
+                            d="M442.668,268.536l-16.116-16.12c-5.06-5.068-11.824-7.872-19.024-7.872c-7.208,0-14.584,2.804-19.644,7.872
                                                       L283.688,355.992V26.924C283.688,12.084,272.856,0,258.02,0h-22.804c-14.832,0-28.404,12.084-28.404,26.924v330.24
                                                       L102.824,252.416c-5.068-5.068-11.444-7.872-18.652-7.872c-7.2,0-13.776,2.804-18.84,7.872l-16.028,16.12
                                                       c-10.488,10.492-10.444,27.56,0.044,38.052l177.576,177.556c5.056,5.056,11.84,7.856,19.1,7.856h0.076
-                                                      c7.204,0,13.972-2.8,19.028-7.856l177.54-177.552C453.164,296.104,453.164,279.028,442.668,268.536z"/>
-                                              </svg>
-                                          </button>
-  
-                                          <button class="btn-edit">
-                                              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
-                                                  <path d="M442.627,185.388L265.083,7.844C260.019,2.78,253.263,0,245.915,0c-7.204,0-13.956,2.78-19.02,7.844L49.347,185.388
+                                                      c7.204,0,13.972-2.8,19.028-7.856l177.54-177.552C453.164,296.104,453.164,279.028,442.668,268.536z" />
+                        </svg>
+                      </button>
+
+                      <button class="btn-edit">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px" y="0px" viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;"
+                          xml:space="preserve">
+                          <path
+                            d="M442.627,185.388L265.083,7.844C260.019,2.78,253.263,0,245.915,0c-7.204,0-13.956,2.78-19.02,7.844L49.347,185.388
                                                       c-10.488,10.492-10.488,27.568,0,38.052l16.12,16.128c5.064,5.06,11.82,7.844,19.028,7.844c7.204,0,14.192-2.784,19.252-7.844
                                                       l103.808-103.584v329.084c0,14.832,11.616,26.932,26.448,26.932h22.8c14.832,0,27.624-12.1,27.624-26.932V134.816l104.396,104.752
-                                                      c5.06,5.06,11.636,7.844,18.844,7.844s13.864-2.784,18.932-7.844l16.072-16.128C453.163,212.952,453.123,195.88,442.627,185.388z"
-                                                      />
-                                              </svg>
-                                          </button>
-                                      </div>
-                                  </div>
-                                  <div class="toggle-btn">
-                                      <label class="switch">
-                                          <input type="checkbox">
-                                          <span class="slider"></span>
-                                      </label>
-                                  </div>
-                              </li>
-                          </ul>
-                          <div class="user-ans-type">
-                              <div class="title">Show answer option as</div>
-                              <div>
-                                  <label class="check-list">
-                                      <input type="radio" name="rt" checked>
-                                      <em class="radio"></em>
-                                      <span class="check-list__info">Radio</span>
-                                  </label>
-                              </div>
-                              <div>
-                                  <label class="check-list">
-                                      <input type="radio" name="rt">
-                                      <em class="radio"></em>
-                                      <span class="check-list__info">Checkbox</span>
-                                  </label>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="step-3">
-                          <div class="question-list">
-                              <div class="question-card" data-num="1">
-                                  <div class="que">Question 1 text</div>
-                                  <div class="opt">Option 1 text</div>
-                                  <div class="opt">Option 2 text</div>
-                                  <div class="opt">Option 3 text</div>
-                                  <div class="opt">Option 4 text</div>
-                                  <div class="edit-box">
-                                      <button class="btn-edit">
-                                          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.867 477.867" style="enable-background:new 0 0 477.867 477.867;" xml:space="preserve">
-                                              <path d="M443.733,68.267H324.267V51.2c0-28.277-22.923-51.2-51.2-51.2H204.8c-28.277,0-51.2,22.923-51.2,51.2v17.067H34.133
+                                                      c5.06,5.06,11.636,7.844,18.844,7.844s13.864-2.784,18.932-7.844l16.072-16.128C453.163,212.952,453.123,195.88,442.627,185.388z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="toggle-btn">
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+              <div class="user-ans-type">
+                <div class="title">Show answer option as</div>
+                <div>
+                  <label class="check-list">
+                    <input type="radio" name="rt" checked>
+                    <em class="radio"></em>
+                    <span class="check-list__info">Radio</span>
+                  </label>
+                </div>
+                <div>
+                  <label class="check-list">
+                    <input type="radio" name="rt">
+                    <em class="radio"></em>
+                    <span class="check-list__info">Checkbox</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="step-3">
+              <div class="question-list">
+                <div class="question-card" data-num="1">
+                  <div class="que">Question 1 text</div>
+                  <div class="opt">Option 1 text</div>
+                  <div class="opt">Option 2 text</div>
+                  <div class="opt">Option 3 text</div>
+                  <div class="opt">Option 4 text</div>
+                  <div class="edit-box">
+                    <button class="btn-edit">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" viewBox="0 0 477.867 477.867" style="enable-background:new 0 0 477.867 477.867;"
+                        xml:space="preserve">
+                        <path
+                          d="M443.733,68.267H324.267V51.2c0-28.277-22.923-51.2-51.2-51.2H204.8c-28.277,0-51.2,22.923-51.2,51.2v17.067H34.133
                                                   c-9.426,0-17.067,7.641-17.067,17.067S24.708,102.4,34.133,102.4h18.551l32.649,359.953c0.805,8.814,8.216,15.55,17.067,15.514
                                                   h273.067c8.851,0.037,16.261-6.699,17.067-15.514L425.182,102.4h18.552c9.426,0,17.067-7.641,17.067-17.067
                                                   S453.159,68.267,443.733,68.267z M187.733,51.2c0-9.426,7.641-17.067,17.067-17.067h68.267c9.426,0,17.067,7.641,17.067,17.067
@@ -651,33 +767,42 @@
                                                   C188.425,400.722,181.365,408.903,171.964,409.594z M256,392.533c0,9.426-7.641,17.067-17.067,17.067s-17.067-7.641-17.067-17.067
                                                   V153.6c0-9.426,7.641-17.067,17.067-17.067S256,144.174,256,153.6V392.533z M341.333,154.812l-17.067,238.933
                                                   c-0.637,8.949-8.095,15.878-17.067,15.855h-1.229c-9.403-0.653-16.496-8.805-15.843-18.208c0.002-0.023,0.003-0.047,0.005-0.07
-                                                  L307.2,152.388c0.669-9.426,8.853-16.524,18.278-15.855C334.904,137.203,342.003,145.386,341.333,154.812z"></path>
-                                          </svg>
-                                      </button>
-                                      <button class="btn-edit">
-                                          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.873 477.873" style="enable-background:new 0 0 477.873 477.873;" xml:space="preserve">
-                                              <path d="M392.533,238.937c-9.426,0-17.067,7.641-17.067,17.067V426.67c0,9.426-7.641,17.067-17.067,17.067H51.2
+                                                  L307.2,152.388c0.669-9.426,8.853-16.524,18.278-15.855C334.904,137.203,342.003,145.386,341.333,154.812z">
+                        </path>
+                      </svg>
+                    </button>
+                    <button class="btn-edit">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" viewBox="0 0 477.873 477.873" style="enable-background:new 0 0 477.873 477.873;"
+                        xml:space="preserve">
+                        <path
+                          d="M392.533,238.937c-9.426,0-17.067,7.641-17.067,17.067V426.67c0,9.426-7.641,17.067-17.067,17.067H51.2
                                                   c-9.426,0-17.067-7.641-17.067-17.067V85.337c0-9.426,7.641-17.067,17.067-17.067H256c9.426,0,17.067-7.641,17.067-17.067
                                                   S265.426,34.137,256,34.137H51.2C22.923,34.137,0,57.06,0,85.337V426.67c0,28.277,22.923,51.2,51.2,51.2h307.2
-                                                  c28.277,0,51.2-22.923,51.2-51.2V256.003C409.6,246.578,401.959,238.937,392.533,238.937z"></path>
-                                              <path d="M458.742,19.142c-12.254-12.256-28.875-19.14-46.206-19.138c-17.341-0.05-33.979,6.846-46.199,19.149L141.534,243.937
+                                                  c28.277,0,51.2-22.923,51.2-51.2V256.003C409.6,246.578,401.959,238.937,392.533,238.937z">
+                        </path>
+                        <path d="M458.742,19.142c-12.254-12.256-28.875-19.14-46.206-19.138c-17.341-0.05-33.979,6.846-46.199,19.149L141.534,243.937
                                                   c-1.865,1.879-3.272,4.163-4.113,6.673l-34.133,102.4c-2.979,8.943,1.856,18.607,10.799,21.585
                                                   c1.735,0.578,3.552,0.873,5.38,0.875c1.832-0.003,3.653-0.297,5.393-0.87l102.4-34.133c2.515-0.84,4.8-2.254,6.673-4.13
-                                                  l224.802-224.802C484.25,86.023,484.253,44.657,458.742,19.142z"></path>
-                                          </svg>
-                                      </button>
-                                  </div>
-                              </div>
-                              <div class="question-card" data-num="2">
-                                  <div class="que">Question 1 text</div>
-                                  <div class="opt">Option 1 text</div>
-                                  <div class="opt">Option 2 text</div>
-                                  <div class="opt">Option 3 text</div>
-                                  <div class="opt">Option 4 text</div>
-                                  <div class="edit-box">
-                                      <button class="btn-edit">
-                                          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.867 477.867" style="enable-background:new 0 0 477.867 477.867;" xml:space="preserve">
-                                              <path d="M443.733,68.267H324.267V51.2c0-28.277-22.923-51.2-51.2-51.2H204.8c-28.277,0-51.2,22.923-51.2,51.2v17.067H34.133
+                                                  l224.802-224.802C484.25,86.023,484.253,44.657,458.742,19.142z">
+                        </path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="question-card" data-num="2">
+                  <div class="que">Question 1 text</div>
+                  <div class="opt">Option 1 text</div>
+                  <div class="opt">Option 2 text</div>
+                  <div class="opt">Option 3 text</div>
+                  <div class="opt">Option 4 text</div>
+                  <div class="edit-box">
+                    <button class="btn-edit">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" viewBox="0 0 477.867 477.867" style="enable-background:new 0 0 477.867 477.867;"
+                        xml:space="preserve">
+                        <path
+                          d="M443.733,68.267H324.267V51.2c0-28.277-22.923-51.2-51.2-51.2H204.8c-28.277,0-51.2,22.923-51.2,51.2v17.067H34.133
                                                   c-9.426,0-17.067,7.641-17.067,17.067S24.708,102.4,34.133,102.4h18.551l32.649,359.953c0.805,8.814,8.216,15.55,17.067,15.514
                                                   h273.067c8.851,0.037,16.261-6.699,17.067-15.514L425.182,102.4h18.552c9.426,0,17.067-7.641,17.067-17.067
                                                   S453.159,68.267,443.733,68.267z M187.733,51.2c0-9.426,7.641-17.067,17.067-17.067h68.267c9.426,0,17.067,7.641,17.067,17.067
@@ -686,104 +811,146 @@
                                                   C188.425,400.722,181.365,408.903,171.964,409.594z M256,392.533c0,9.426-7.641,17.067-17.067,17.067s-17.067-7.641-17.067-17.067
                                                   V153.6c0-9.426,7.641-17.067,17.067-17.067S256,144.174,256,153.6V392.533z M341.333,154.812l-17.067,238.933
                                                   c-0.637,8.949-8.095,15.878-17.067,15.855h-1.229c-9.403-0.653-16.496-8.805-15.843-18.208c0.002-0.023,0.003-0.047,0.005-0.07
-                                                  L307.2,152.388c0.669-9.426,8.853-16.524,18.278-15.855C334.904,137.203,342.003,145.386,341.333,154.812z"></path>
-                                          </svg>
-                                      </button>
-                                      <button class="btn-edit">
-                                          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.873 477.873" style="enable-background:new 0 0 477.873 477.873;" xml:space="preserve">
-                                              <path d="M392.533,238.937c-9.426,0-17.067,7.641-17.067,17.067V426.67c0,9.426-7.641,17.067-17.067,17.067H51.2
+                                                  L307.2,152.388c0.669-9.426,8.853-16.524,18.278-15.855C334.904,137.203,342.003,145.386,341.333,154.812z">
+                        </path>
+                      </svg>
+                    </button>
+                    <button class="btn-edit">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" viewBox="0 0 477.873 477.873" style="enable-background:new 0 0 477.873 477.873;"
+                        xml:space="preserve">
+                        <path
+                          d="M392.533,238.937c-9.426,0-17.067,7.641-17.067,17.067V426.67c0,9.426-7.641,17.067-17.067,17.067H51.2
                                                   c-9.426,0-17.067-7.641-17.067-17.067V85.337c0-9.426,7.641-17.067,17.067-17.067H256c9.426,0,17.067-7.641,17.067-17.067
                                                   S265.426,34.137,256,34.137H51.2C22.923,34.137,0,57.06,0,85.337V426.67c0,28.277,22.923,51.2,51.2,51.2h307.2
-                                                  c28.277,0,51.2-22.923,51.2-51.2V256.003C409.6,246.578,401.959,238.937,392.533,238.937z"></path>
-                                              <path d="M458.742,19.142c-12.254-12.256-28.875-19.14-46.206-19.138c-17.341-0.05-33.979,6.846-46.199,19.149L141.534,243.937
+                                                  c28.277,0,51.2-22.923,51.2-51.2V256.003C409.6,246.578,401.959,238.937,392.533,238.937z">
+                        </path>
+                        <path d="M458.742,19.142c-12.254-12.256-28.875-19.14-46.206-19.138c-17.341-0.05-33.979,6.846-46.199,19.149L141.534,243.937
                                                   c-1.865,1.879-3.272,4.163-4.113,6.673l-34.133,102.4c-2.979,8.943,1.856,18.607,10.799,21.585
                                                   c1.735,0.578,3.552,0.873,5.38,0.875c1.832-0.003,3.653-0.297,5.393-0.87l102.4-34.133c2.515-0.84,4.8-2.254,6.673-4.13
-                                                  l224.802-224.802C484.25,86.023,484.253,44.657,458.742,19.142z"></path>
-                                          </svg>
-                                      </button>
-                                  </div>
-                              </div>
-                          </div>
-                          <p>Select question type to add.</p>
-                          <div class="pl-md-30 d-flex justify-content-around justify-content-md-start">
-                              <button class="btn btn-secondary">Multiple Choice</button>
-                              <button class="btn btn-secondary ml-15 ml-md-25 ">Free Text</button>
-                          </div>
-                          <div class="toggle-btn single-line-toggle">
-                              <label class="switch">
-                                  <input type="checkbox">
-                                  <span class="slider"></span>
-                              </label>
-                              <div class="text">Randomize the order of questions.</div>
-                          </div>
-                      </div>
-                      
+                                                  l224.802-224.802C484.25,86.023,484.253,44.657,458.742,19.142z">
+                        </path>
+                      </svg>
+                    </button>
                   </div>
+                </div>
               </div>
-              <div class="modal-footer">
-                  <div class="text-center">
-                      <button class="btn" id="nextStep">OK</button>
-                  </div>
+              <p>Select question type to add.</p>
+              <div class="pl-md-30 d-flex justify-content-around justify-content-md-start">
+                <button class="btn btn-secondary">Multiple Choice</button>
+                <button class="btn btn-secondary ml-15 ml-md-25 ">Free Text</button>
               </div>
+              <div class="toggle-btn single-line-toggle">
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider"></span>
+                </label>
+                <div class="text">Randomize the order of questions.</div>
+              </div>
+            </div>
+
           </div>
-      </div>
-  </div>
-  
-  <div class="modal" id="examModal">
-      <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-              <div class="modal-header flex-between-center">
-                  <div class="modal-title"></div>
-                  <button class="btn-close" data-dismiss="modal">
-                      <img src="https://kushashish.github.io/exam/img/svg/cancel.svg" alt="close btn">
-                  </button>
-              </div>
-              <div class="modal-body">
-                  <textarea name="editor3"></textarea>
-              </div>
-              <div class="modal-footer">
-                  <div class="text-center">
-                      <button class="btn">OK</button>
-                  </div>
-              </div>
+        </div>
+        <div class="modal-footer">
+          <div class="text-center">
+            <button class="btn" id="nextStep">OK</button>
           </div>
+        </div>
       </div>
-  </div>
-  
-  <div class="modal" id="pdfModal">
-      <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-              <div class="modal-header flex-between-center">
-                  <div class="modal-title"></div>
-                  <button class="btn-close" data-dismiss="modal">
-                      <img src="https://kushashish.github.io/exam/img/svg/cancel.svg" alt="close btn">
-                  </button>
-              </div>
-              <div class="modal-body d-none" id="modalBody" >
-                  <div>
-                      <button id="prev">Previous</button>
-                      <button id="next">Next</button>
-                      &nbsp; &nbsp;
-                      <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
-                  </div>
-                  <div class="pdf-box">
-                      <canvas id="the-canvas"></canvas>
-                  </div>
-              </div>
-              <div class="modal-footer">
-                  <div class="text-center">
-                      <label class="btn" >
-                          <span id="uploadText">Choose PDF document</span>
-                          <input type="file" hidden id="uploadPdf" />
-                      </label>
-                  </div>
-              </div>
-          </div>
-      </div>
+    </div>
   </div>
 
-    <script src="https://cdn.ckeditor.com/4.15.0/standard/ckeditor.js"></script>
-    <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
-    <script src="https://kushashish.github.io/exam/js/script.js"></script>
-  </body>
+  <div class="modal" id="examModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header flex-between-center">
+          <div class="modal-title"></div>
+          <button class="btn-close" data-dismiss="modal">
+            <img src="https://kushashish.github.io/exam/img/svg/cancel.svg" alt="close btn">
+          </button>
+        </div>
+        <div class="modal-body">
+          <textarea name="editor3"></textarea>
+        </div>
+        <div class="modal-footer">
+          <div class="text-center">
+            <button class="btn">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="pdfModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header flex-between-center">
+          <div class="modal-title"></div>
+          <button class="btn-close" data-dismiss="modal">
+            <img src="https://kushashish.github.io/exam/img/svg/cancel.svg" alt="close btn">
+          </button>
+        </div>
+        <div class="modal-body d-none" id="modalBody">
+          <div>
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+            &nbsp; &nbsp;
+            <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+          </div>
+          <div class="pdf-box">
+            <canvas id="the-canvas"></canvas>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="text-center">
+            <label class="btn">
+              <span id="uploadText">Choose PDF document</span>
+              <input type="file" hidden id="uploadPdf" />
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal" id="changePwd">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header flex-between-center">
+          <div class="modal-title"></div>
+          <button class="btn-close" data-dismiss="modal">
+            <img src="https://kushashish.github.io/exam/img/svg/cancel.svg" alt="close btn">
+          </button>
+        </div>
+        <div class="modal-body" id="modalBody">
+          <div class="form-wrapper">
+            <div class="input-group">
+              <label for="oldPwd">Old Password</label>
+              <input class="form-input" placeholder="Old Passowrd" />
+            </div>
+            <div class="input-group">
+              <label for="oldPwd">New Password</label>
+              <input class="form-input" placeholder="New Passowrd" />
+            </div>
+            <div class="input-group">
+              <label for="oldPwd">Confirm Password</label>
+              <input class="form-input" placeholder="Confirm Passowrd" />
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="text-center">
+            <button class="btn">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.ckeditor.com/4.15.0/standard/ckeditor.js"></script>
+  <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
+  <script src="https://kushashish.github.io/exam/js/script.js"></script>
+</body>
+
 </html>
