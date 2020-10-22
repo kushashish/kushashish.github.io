@@ -276,14 +276,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // document.addEventListener('click', function(event) {
-        // event.preventDefault();
-        // const target = event.target;
-        // const isProfileActive = document.querySelector('.user-box.profile-active');
-        // if(!isParents(target, 'user-box') && isProfileActive) {
-        //     document.querySelector('.user-box').classList.remove('profile-active');
-        // }
-    // });
+    document.addEventListener('click', function(event) {
+        const target = event.target;
+        const isProfileActive = document.querySelector('.user-box.profile-active');
+        if(!isParents(target, 'user-box') && isProfileActive) {
+            document.querySelector('.user-box').classList.remove('profile-active');
+        }
+    });
     
     const customDDBtn = document.querySelector('.dd-title');
     if(customDDBtn) {
@@ -292,15 +291,18 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     }
 
-    // function isParents(currentElm, parentSelector) {
-    //     while(currentElm.parentNode != null && currentElm.parentNode != document.documentElement) {
-    //         if(currentElm.classList.contains(parentSelector)) {
-    //             return true;
-    //             break;
-    //         }
-    //         currentElm = currentElm.parentNode;
-    //     }
-    //     return false; 
-    //  }
+    function isParents(currentElm, parentSelector) {
+        while(currentElm.parentNode != null && currentElm.parentNode != document.documentElement) {
+            if(currentElm.classList.contains(parentSelector)) {
+                return true;
+                break;
+            }
+            currentElm = currentElm.parentNode;
+        }
+        return false; 
+    }
 
+    if(insExam) {
+        CKEDITOR.replace( 'insExam' );
+    }
 });

@@ -192,6 +192,17 @@
     </section>
 
     <section class="content-card">
+        <div class="header">Exam Instructions</div>
+        <div class="panel">
+            <div class="content ">
+                <div class="py-4">
+                    <textarea name="insExam" id="insExam"></textarea>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-card">
         <div class="header">Security</div>
         <div class="panel">
             <div class="content">

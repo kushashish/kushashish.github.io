@@ -1,4 +1,32 @@
-<footer class="fixed-footer flex-between-center">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="https://kushashish.github.io/exam/img/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://kushashish.github.io/exam/css/style.css">
+    <title>Exam Solutions</title>
+  </head>
+  <body class="test-page">
+  <header class="test-header d-md-none">
+  <div class="power-by">
+    powered by
+    <img src="https://kushashish.github.io/exam/img/logo.png" alt="open scola">
+  </div>
+  <time class="time inline-flex-center-center">
+    <img src="https://kushashish.github.io/exam/img/svg/clock.svg" alt="alarm clock">
+    23 : 21 : 45
+  </time>
+</header>
+
+    <div class="wrapper colm" id="bordWrapper">
+      <div class="col">
+        <textarea name="textEditor"></textarea>
+      </div>
+    </div>
+
+    <footer class="fixed-footer flex-between-center">
   <div class="d-flex first-box">
     <div class="custom-dd">
       <div class="dd-title">
@@ -51,3 +79,12 @@
     </div>
   </div>
 </footer>
+
+    <script src="https://cdn.ckeditor.com/4.15.0/standard/ckeditor.js"></script>
+    <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="https://kushashish.github.io/exam/js/script.js"></script>
+    <script>
+      CKEDITOR.replace( 'textEditor' );
+    </script>
+  </body>
+</html>

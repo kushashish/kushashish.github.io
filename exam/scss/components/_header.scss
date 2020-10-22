@@ -68,9 +68,9 @@
   right: 0;
   top: calc(100% + 10px);
   border-radius: 8px;
-  box-shadow: 0 3px 10px rgba($body-color, 0.1);
   display: none;
   @include media-breakpoint-up(md) {
+    box-shadow: 0 3px 10px rgba($body-color, 0.1);
     position: absolute;
     background: white;
   }
@@ -105,8 +105,11 @@
     }
   }
   .divider {
-    border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid #FFF;
     margin: 10px 0;
+    @include media-breakpoint-up(md) {
+      border-bottom-color: #f1f1f1;
+    }
   }
   .link {
     display: block;
